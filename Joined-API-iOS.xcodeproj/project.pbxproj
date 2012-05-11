@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0310C715155818780077BBB9 /* JoinedHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310C714155818780077BBB9 /* JoinedHTTPClient.m */; };
+		0310C716155818780077BBB9 /* JoinedHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0310C714155818780077BBB9 /* JoinedHTTPClient.m */; };
+		03356C521559128E0080F0BE /* NSString+easyHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 03356C511559128E0080F0BE /* NSString+easyHash.m */; };
+		03356C53155912910080F0BE /* NSString+easyHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 03356C511559128E0080F0BE /* NSString+easyHash.m */; };
+		03356C56155915380080F0BE /* JSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03356C55155915380080F0BE /* JSONRequestOperation.m */; };
+		03356C57155915380080F0BE /* JSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03356C55155915380080F0BE /* JSONRequestOperation.m */; };
+		034F9558155813D70010E82A /* AFHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9546155813D70010E82A /* AFHTTPClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F9559155813D70010E82A /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9548155813D70010E82A /* AFHTTPRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955A155813D70010E82A /* AFImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F954A155813D70010E82A /* AFImageRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955B155813D70010E82A /* AFJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F954C155813D70010E82A /* AFJSONRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955C155813D70010E82A /* AFJSONUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F954E155813D70010E82A /* AFJSONUtilities.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955D155813D70010E82A /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9550155813D70010E82A /* AFNetworkActivityIndicatorManager.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955E155813D70010E82A /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9553155813D70010E82A /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F955F155813D70010E82A /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9555155813D70010E82A /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		034F9560155813D70010E82A /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 034F9557155813D70010E82A /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		03E84209155810CC00E3C050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E84208155810CC00E3C050 /* UIKit.framework */; };
+		03E8420B155810CC00E3C050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420A155810CC00E3C050 /* Foundation.framework */; };
+		03E8420D155810CC00E3C050 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420C155810CC00E3C050 /* CoreGraphics.framework */; };
+		03E84213155810CC00E3C050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03E84211155810CC00E3C050 /* InfoPlist.strings */; };
+		03E84215155810CC00E3C050 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84214155810CC00E3C050 /* main.m */; };
+		03E84219155810CC00E3C050 /* JOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84218155810CC00E3C050 /* JOAppDelegate.m */; };
+		03E8421C155810CC00E3C050 /* JOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E8421B155810CC00E3C050 /* JOViewController.m */; };
+		03E8421F155810CD00E3C050 /* JOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03E8421D155810CD00E3C050 /* JOViewController.xib */; };
+		03E84227155810CD00E3C050 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E84226155810CD00E3C050 /* SenTestingKit.framework */; };
+		03E84228155810CD00E3C050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E84208155810CC00E3C050 /* UIKit.framework */; };
+		03E84229155810CD00E3C050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420A155810CC00E3C050 /* Foundation.framework */; };
+		03E84231155810CD00E3C050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03E8422F155810CD00E3C050 /* InfoPlist.strings */; };
+		03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */; };
+		03E84241155810F100E3C050 /* JOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84240155810F100E3C050 /* JOClient.m */; };
+		03E842461558110C00E3C050 /* JOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E842451558110C00E3C050 /* JOUser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03E8422A155810CD00E3C050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03E841FB155810CC00E3C050 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03E84203155810CC00E3C050;
+			remoteInfo = "Joined-API-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0310C713155818780077BBB9 /* JoinedHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinedHTTPClient.h; sourceTree = "<group>"; };
+		0310C714155818780077BBB9 /* JoinedHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinedHTTPClient.m; sourceTree = "<group>"; };
+		03356C501559128E0080F0BE /* NSString+easyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+easyHash.h"; sourceTree = "<group>"; };
+		03356C511559128E0080F0BE /* NSString+easyHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+easyHash.m"; sourceTree = "<group>"; };
+		03356C54155915380080F0BE /* JSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRequestOperation.h; sourceTree = "<group>"; };
+		03356C55155915380080F0BE /* JSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestOperation.m; sourceTree = "<group>"; };
+		034F9545155813D70010E82A /* AFHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPClient.h; sourceTree = "<group>"; };
+		034F9546155813D70010E82A /* AFHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPClient.m; sourceTree = "<group>"; };
+		034F9547155813D70010E82A /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		034F9548155813D70010E82A /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		034F9549155813D70010E82A /* AFImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFImageRequestOperation.h; sourceTree = "<group>"; };
+		034F954A155813D70010E82A /* AFImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFImageRequestOperation.m; sourceTree = "<group>"; };
+		034F954B155813D70010E82A /* AFJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONRequestOperation.h; sourceTree = "<group>"; };
+		034F954C155813D70010E82A /* AFJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONRequestOperation.m; sourceTree = "<group>"; };
+		034F954D155813D70010E82A /* AFJSONUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFJSONUtilities.h; sourceTree = "<group>"; };
+		034F954E155813D70010E82A /* AFJSONUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFJSONUtilities.m; sourceTree = "<group>"; };
+		034F954F155813D70010E82A /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkActivityIndicatorManager.h; sourceTree = "<group>"; };
+		034F9550155813D70010E82A /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkActivityIndicatorManager.m; sourceTree = "<group>"; };
+		034F9551155813D70010E82A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		034F9552155813D70010E82A /* AFPropertyListRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFPropertyListRequestOperation.h; sourceTree = "<group>"; };
+		034F9553155813D70010E82A /* AFPropertyListRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFPropertyListRequestOperation.m; sourceTree = "<group>"; };
+		034F9554155813D70010E82A /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		034F9555155813D70010E82A /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		034F9556155813D70010E82A /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
+		034F9557155813D70010E82A /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
+		034F9566155814960010E82A /* JOConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOConfig.h; sourceTree = "<group>"; };
+		03E84204155810CC00E3C050 /* Joined-API-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joined-API-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E84208155810CC00E3C050 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		03E8420A155810CC00E3C050 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		03E8420C155810CC00E3C050 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		03E84210155810CC00E3C050 /* Joined-API-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Joined-API-iOS-Info.plist"; sourceTree = "<group>"; };
+		03E84212155810CC00E3C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03E84214155810CC00E3C050 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03E84216155810CC00E3C050 /* Joined-API-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Joined-API-iOS-Prefix.pch"; sourceTree = "<group>"; };
+		03E84217155810CC00E3C050 /* JOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOAppDelegate.h; sourceTree = "<group>"; };
+		03E84218155810CC00E3C050 /* JOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOAppDelegate.m; sourceTree = "<group>"; };
+		03E8421A155810CC00E3C050 /* JOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JOViewController.h; sourceTree = "<group>"; };
+		03E8421B155810CC00E3C050 /* JOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JOViewController.m; sourceTree = "<group>"; };
+		03E8421E155810CD00E3C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JOViewController.xib; sourceTree = "<group>"; };
+		03E84225155810CD00E3C050 /* Joined-API-iOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Joined-API-iOSTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03E84226155810CD00E3C050 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		03E8422E155810CD00E3C050 /* Joined-API-iOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Joined-API-iOSTests-Info.plist"; sourceTree = "<group>"; };
+		03E84230155810CD00E3C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		03E84232155810CD00E3C050 /* Joined_API_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Joined_API_iOSTests.h; sourceTree = "<group>"; };
+		03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Joined_API_iOSTests.m; sourceTree = "<group>"; };
+		03E8423F155810F100E3C050 /* JOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOClient.h; sourceTree = "<group>"; };
+		03E84240155810F100E3C050 /* JOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOClient.m; sourceTree = "<group>"; };
+		03E842441558110C00E3C050 /* JOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOUser.h; sourceTree = "<group>"; };
+		03E842451558110C00E3C050 /* JOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOUser.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03E84201155810CC00E3C050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84209155810CC00E3C050 /* UIKit.framework in Frameworks */,
+				03E8420B155810CC00E3C050 /* Foundation.framework in Frameworks */,
+				03E8420D155810CC00E3C050 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E84221155810CD00E3C050 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84227155810CD00E3C050 /* SenTestingKit.framework in Frameworks */,
+				03E84228155810CD00E3C050 /* UIKit.framework in Frameworks */,
+				03E84229155810CD00E3C050 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03356C4E155912740080F0BE /* General */ = {
+			isa = PBXGroup;
+			children = (
+				03356C54155915380080F0BE /* JSONRequestOperation.h */,
+				03356C55155915380080F0BE /* JSONRequestOperation.m */,
+				03356C501559128E0080F0BE /* NSString+easyHash.h */,
+				03356C511559128E0080F0BE /* NSString+easyHash.m */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		0343295E15581B000048EDE7 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				034F9566155814960010E82A /* JOConfig.h */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		03E841F9155810CC00E3C050 = {
+			isa = PBXGroup;
+			children = (
+				03E8420E155810CC00E3C050 /* Joined-API-iOS */,
+				03E8422C155810CD00E3C050 /* Joined-API-iOSTests */,
+				03E84207155810CC00E3C050 /* Frameworks */,
+				03E84205155810CC00E3C050 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		03E84205155810CC00E3C050 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03E84204155810CC00E3C050 /* Joined-API-iOS.app */,
+				03E84225155810CD00E3C050 /* Joined-API-iOSTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03E84207155810CC00E3C050 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03E84208155810CC00E3C050 /* UIKit.framework */,
+				03E8420A155810CC00E3C050 /* Foundation.framework */,
+				03E8420C155810CC00E3C050 /* CoreGraphics.framework */,
+				03E84226155810CD00E3C050 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03E8420E155810CC00E3C050 /* Joined-API-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				03E8424B155812EE00E3C050 /* External */,
+				03E8423E155810DD00E3C050 /* JoinedServerAPI */,
+				03E84217155810CC00E3C050 /* JOAppDelegate.h */,
+				03E84218155810CC00E3C050 /* JOAppDelegate.m */,
+				03E8421A155810CC00E3C050 /* JOViewController.h */,
+				03E8421B155810CC00E3C050 /* JOViewController.m */,
+				03E8421D155810CD00E3C050 /* JOViewController.xib */,
+				03E8420F155810CC00E3C050 /* Supporting Files */,
+			);
+			path = "Joined-API-iOS";
+			sourceTree = "<group>";
+		};
+		03E8420F155810CC00E3C050 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03E84210155810CC00E3C050 /* Joined-API-iOS-Info.plist */,
+				03E84211155810CC00E3C050 /* InfoPlist.strings */,
+				03E84214155810CC00E3C050 /* main.m */,
+				03E84216155810CC00E3C050 /* Joined-API-iOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03E8422C155810CD00E3C050 /* Joined-API-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				03E84232155810CD00E3C050 /* Joined_API_iOSTests.h */,
+				03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */,
+				03E8422D155810CD00E3C050 /* Supporting Files */,
+			);
+			path = "Joined-API-iOSTests";
+			sourceTree = "<group>";
+		};
+		03E8422D155810CD00E3C050 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				03E8422E155810CD00E3C050 /* Joined-API-iOSTests-Info.plist */,
+				03E8422F155810CD00E3C050 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		03E8423E155810DD00E3C050 /* JoinedServerAPI */ = {
+			isa = PBXGroup;
+			children = (
+				03356C4E155912740080F0BE /* General */,
+				0343295E15581B000048EDE7 /* Config */,
+				03E84242155810F900E3C050 /* Model */,
+				03E8423F155810F100E3C050 /* JOClient.h */,
+				03E84240155810F100E3C050 /* JOClient.m */,
+			);
+			name = JoinedServerAPI;
+			sourceTree = "<group>";
+		};
+		03E84242155810F900E3C050 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0310C713155818780077BBB9 /* JoinedHTTPClient.h */,
+				0310C714155818780077BBB9 /* JoinedHTTPClient.m */,
+				03E842441558110C00E3C050 /* JOUser.h */,
+				03E842451558110C00E3C050 /* JOUser.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		03E8424B155812EE00E3C050 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				03E8424C155812F600E3C050 /* AFNetworking */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
+		03E8424C155812F600E3C050 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				034F9545155813D70010E82A /* AFHTTPClient.h */,
+				034F9546155813D70010E82A /* AFHTTPClient.m */,
+				034F9547155813D70010E82A /* AFHTTPRequestOperation.h */,
+				034F9548155813D70010E82A /* AFHTTPRequestOperation.m */,
+				034F9549155813D70010E82A /* AFImageRequestOperation.h */,
+				034F954A155813D70010E82A /* AFImageRequestOperation.m */,
+				034F954B155813D70010E82A /* AFJSONRequestOperation.h */,
+				034F954C155813D70010E82A /* AFJSONRequestOperation.m */,
+				034F954D155813D70010E82A /* AFJSONUtilities.h */,
+				034F954E155813D70010E82A /* AFJSONUtilities.m */,
+				034F954F155813D70010E82A /* AFNetworkActivityIndicatorManager.h */,
+				034F9550155813D70010E82A /* AFNetworkActivityIndicatorManager.m */,
+				034F9551155813D70010E82A /* AFNetworking.h */,
+				034F9552155813D70010E82A /* AFPropertyListRequestOperation.h */,
+				034F9553155813D70010E82A /* AFPropertyListRequestOperation.m */,
+				034F9554155813D70010E82A /* AFURLConnectionOperation.h */,
+				034F9555155813D70010E82A /* AFURLConnectionOperation.m */,
+				034F9556155813D70010E82A /* AFXMLRequestOperation.h */,
+				034F9557155813D70010E82A /* AFXMLRequestOperation.m */,
+			);
+			name = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03E84203155810CC00E3C050 /* Joined-API-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E84237155810CD00E3C050 /* Build configuration list for PBXNativeTarget "Joined-API-iOS" */;
+			buildPhases = (
+				03E84200155810CC00E3C050 /* Sources */,
+				03E84201155810CC00E3C050 /* Frameworks */,
+				03E84202155810CC00E3C050 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joined-API-iOS";
+			productName = "Joined-API-iOS";
+			productReference = 03E84204155810CC00E3C050 /* Joined-API-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03E84224155810CD00E3C050 /* Joined-API-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03E8423A155810CD00E3C050 /* Build configuration list for PBXNativeTarget "Joined-API-iOSTests" */;
+			buildPhases = (
+				03E84220155810CD00E3C050 /* Sources */,
+				03E84221155810CD00E3C050 /* Frameworks */,
+				03E84222155810CD00E3C050 /* Resources */,
+				03E84223155810CD00E3C050 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03E8422B155810CD00E3C050 /* PBXTargetDependency */,
+			);
+			name = "Joined-API-iOSTests";
+			productName = "Joined-API-iOSTests";
+			productReference = 03E84225155810CD00E3C050 /* Joined-API-iOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03E841FB155810CC00E3C050 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JO;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "GeoMobile GmbH";
+			};
+			buildConfigurationList = 03E841FE155810CC00E3C050 /* Build configuration list for PBXProject "Joined-API-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 03E841F9155810CC00E3C050;
+			productRefGroup = 03E84205155810CC00E3C050 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03E84203155810CC00E3C050 /* Joined-API-iOS */,
+				03E84224155810CD00E3C050 /* Joined-API-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03E84202155810CC00E3C050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84213155810CC00E3C050 /* InfoPlist.strings in Resources */,
+				03E8421F155810CD00E3C050 /* JOViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E84222155810CD00E3C050 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84231155810CD00E3C050 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03E84223155810CD00E3C050 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03E84200155810CC00E3C050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84215155810CC00E3C050 /* main.m in Sources */,
+				03E84219155810CC00E3C050 /* JOAppDelegate.m in Sources */,
+				03E8421C155810CC00E3C050 /* JOViewController.m in Sources */,
+				03E84241155810F100E3C050 /* JOClient.m in Sources */,
+				03E842461558110C00E3C050 /* JOUser.m in Sources */,
+				034F9558155813D70010E82A /* AFHTTPClient.m in Sources */,
+				034F9559155813D70010E82A /* AFHTTPRequestOperation.m in Sources */,
+				034F955A155813D70010E82A /* AFImageRequestOperation.m in Sources */,
+				034F955B155813D70010E82A /* AFJSONRequestOperation.m in Sources */,
+				034F955C155813D70010E82A /* AFJSONUtilities.m in Sources */,
+				034F955D155813D70010E82A /* AFNetworkActivityIndicatorManager.m in Sources */,
+				034F955E155813D70010E82A /* AFPropertyListRequestOperation.m in Sources */,
+				034F955F155813D70010E82A /* AFURLConnectionOperation.m in Sources */,
+				034F9560155813D70010E82A /* AFXMLRequestOperation.m in Sources */,
+				0310C715155818780077BBB9 /* JoinedHTTPClient.m in Sources */,
+				03356C53155912910080F0BE /* NSString+easyHash.m in Sources */,
+				03356C56155915380080F0BE /* JSONRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03E84220155810CD00E3C050 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */,
+				0310C716155818780077BBB9 /* JoinedHTTPClient.m in Sources */,
+				03356C521559128E0080F0BE /* NSString+easyHash.m in Sources */,
+				03356C57155915380080F0BE /* JSONRequestOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03E8422B155810CD00E3C050 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03E84203155810CC00E3C050 /* Joined-API-iOS */;
+			targetProxy = 03E8422A155810CD00E3C050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		03E84211155810CC00E3C050 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E84212155810CC00E3C050 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		03E8421D155810CD00E3C050 /* JOViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E8421E155810CD00E3C050 /* en */,
+			);
+			name = JOViewController.xib;
+			sourceTree = "<group>";
+		};
+		03E8422F155810CD00E3C050 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03E84230155810CD00E3C050 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03E84235155810CD00E3C050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		03E84236155810CD00E3C050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03E84238155810CD00E3C050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Joined-API-iOS/Joined-API-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		03E84239155810CD00E3C050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Joined-API-iOS/Joined-API-iOS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		03E8423B155810CD00E3C050 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Joined-API-iOS.app/Joined-API-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Joined-API-iOSTests/Joined-API-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		03E8423C155810CD00E3C050 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Joined-API-iOS.app/Joined-API-iOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
+				INFOPLIST_FILE = "Joined-API-iOSTests/Joined-API-iOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03E841FE155810CC00E3C050 /* Build configuration list for PBXProject "Joined-API-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E84235155810CD00E3C050 /* Debug */,
+				03E84236155810CD00E3C050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E84237155810CD00E3C050 /* Build configuration list for PBXNativeTarget "Joined-API-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E84238155810CD00E3C050 /* Debug */,
+				03E84239155810CD00E3C050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03E8423A155810CD00E3C050 /* Build configuration list for PBXNativeTarget "Joined-API-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03E8423B155810CD00E3C050 /* Debug */,
+				03E8423C155810CD00E3C050 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 03E841FB155810CC00E3C050 /* Project object */;
+}
