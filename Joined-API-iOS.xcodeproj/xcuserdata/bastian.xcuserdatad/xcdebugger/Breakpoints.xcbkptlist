@@ -29,5 +29,18 @@
          landmarkName = "-loginUser:andPassword:success:failed:"
          landmarkType = "5">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Joined-API-iOS/JoinedBearingAPI/JOCompassView.m"
+         timestampString = "358717815.597702"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "-initWithFrame:"
+         landmarkType = "5">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

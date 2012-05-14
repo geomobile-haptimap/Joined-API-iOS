@@ -11,6 +11,7 @@
 #import "JOClient.h"
 #import "JOFriend.h"
 #import "JOFriendLocationViewController.h"
+#import "DestinationViewController.h"
 
 @implementation JOFriendListViewController
 
@@ -71,7 +72,7 @@
     JOFriend* friend = [self.friendList objectAtIndex:indexPath.row];
     
     JOFriendLocationViewController* friendLocationView = [[JOFriendLocationViewController alloc] initWithFriend:friend];
-    [self.navigationController pushViewController:friendLocationView animated:YES];
+    [self.navigationController pushViewController:friendLocationView animated:YES]; 
 }
 
 @end

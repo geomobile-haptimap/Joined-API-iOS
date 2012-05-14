@@ -11,7 +11,7 @@
 
 #import "JOFriend.h"
 
-@interface JOFriendLocationViewController : UIViewController
+@interface JOFriendLocationViewController : UIViewController<MKMapViewDelegate>
 
 @property (strong, atomic) MKMapView* mapView;
 @property (strong, atomic) JOFriend* friend;

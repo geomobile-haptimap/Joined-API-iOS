@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0349F26315618B1900F5AEDB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26215618B1900F5AEDB /* CoreLocation.framework */; };
+		0349F26515618B2800F5AEDB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26415618B2800F5AEDB /* CoreAudio.framework */; };
+		0349F26715618B4C00F5AEDB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26615618B4C00F5AEDB /* AudioToolbox.framework */; };
+		03E19D8515619AFE008DEF50 /* bearing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03E19D7915619AFE008DEF50 /* bearing.bundle */; };
+		03E19D8615619AFE008DEF50 /* BearingCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D7B15619AFE008DEF50 /* BearingCore.m */; };
+		03E19D8715619AFE008DEF50 /* CompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D7D15619AFE008DEF50 /* CompassView.m */; };
+		03E19D8815619AFE008DEF50 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D7F15619AFE008DEF50 /* DestinationViewController.m */; };
+		03E19D8915619AFE008DEF50 /* Geiger.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D8215619AFE008DEF50 /* Geiger.m */; };
+		03E19D8A15619AFE008DEF50 /* Vibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D8415619AFE008DEF50 /* Vibrator.m */; };
 		03E84209155810CC00E3C050 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E84208155810CC00E3C050 /* UIKit.framework */; };
 		03E8420B155810CC00E3C050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420A155810CC00E3C050 /* Foundation.framework */; };
 		03E8420D155810CC00E3C050 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420C155810CC00E3C050 /* CoreGraphics.framework */; };
@@ -53,6 +62,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0349F26215618B1900F5AEDB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0349F26415618B2800F5AEDB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		0349F26615618B4C00F5AEDB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03E19D7915619AFE008DEF50 /* bearing.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = bearing.bundle; path = JoinedBearingAPI/bearing.bundle; sourceTree = "<group>"; };
+		03E19D7A15619AFE008DEF50 /* BearingCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BearingCore.h; path = JoinedBearingAPI/BearingCore.h; sourceTree = "<group>"; };
+		03E19D7B15619AFE008DEF50 /* BearingCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BearingCore.m; path = JoinedBearingAPI/BearingCore.m; sourceTree = "<group>"; };
+		03E19D7C15619AFE008DEF50 /* CompassView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CompassView.h; path = JoinedBearingAPI/CompassView.h; sourceTree = "<group>"; };
+		03E19D7D15619AFE008DEF50 /* CompassView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CompassView.m; path = JoinedBearingAPI/CompassView.m; sourceTree = "<group>"; };
+		03E19D7E15619AFE008DEF50 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DestinationViewController.h; path = JoinedBearingAPI/DestinationViewController.h; sourceTree = "<group>"; };
+		03E19D7F15619AFE008DEF50 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DestinationViewController.m; path = JoinedBearingAPI/DestinationViewController.m; sourceTree = "<group>"; };
+		03E19D8015619AFE008DEF50 /* DeviationDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviationDelegate.h; path = JoinedBearingAPI/DeviationDelegate.h; sourceTree = "<group>"; };
+		03E19D8115619AFE008DEF50 /* Geiger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Geiger.h; path = JoinedBearingAPI/Geiger.h; sourceTree = "<group>"; };
+		03E19D8215619AFE008DEF50 /* Geiger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Geiger.m; path = JoinedBearingAPI/Geiger.m; sourceTree = "<group>"; };
+		03E19D8315619AFE008DEF50 /* Vibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Vibrator.h; path = JoinedBearingAPI/Vibrator.h; sourceTree = "<group>"; };
+		03E19D8415619AFE008DEF50 /* Vibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Vibrator.m; path = JoinedBearingAPI/Vibrator.m; sourceTree = "<group>"; };
 		03E84204155810CC00E3C050 /* Joined-API-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joined-API-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		03E84208155810CC00E3C050 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		03E8420A155810CC00E3C050 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -120,6 +144,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0349F26715618B4C00F5AEDB /* AudioToolbox.framework in Frameworks */,
+				0349F26515618B2800F5AEDB /* CoreAudio.framework in Frameworks */,
+				0349F26315618B1900F5AEDB /* CoreLocation.framework in Frameworks */,
 				6FB9A433156131ED004A7645 /* MapKit.framework in Frameworks */,
 				03E84209155810CC00E3C050 /* UIKit.framework in Frameworks */,
 				03E8420B155810CC00E3C050 /* Foundation.framework in Frameworks */,
@@ -140,9 +167,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0349F1FA1561867B00F5AEDB /* JoinedBearingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				03E19D7915619AFE008DEF50 /* bearing.bundle */,
+				03E19D7A15619AFE008DEF50 /* BearingCore.h */,
+				03E19D7B15619AFE008DEF50 /* BearingCore.m */,
+				03E19D7C15619AFE008DEF50 /* CompassView.h */,
+				03E19D7D15619AFE008DEF50 /* CompassView.m */,
+				03E19D7E15619AFE008DEF50 /* DestinationViewController.h */,
+				03E19D7F15619AFE008DEF50 /* DestinationViewController.m */,
+				03E19D8015619AFE008DEF50 /* DeviationDelegate.h */,
+				03E19D8115619AFE008DEF50 /* Geiger.h */,
+				03E19D8215619AFE008DEF50 /* Geiger.m */,
+				03E19D8315619AFE008DEF50 /* Vibrator.h */,
+				03E19D8415619AFE008DEF50 /* Vibrator.m */,
+			);
+			name = JoinedBearingAPI;
+			sourceTree = "<group>";
+		};
 		03E841F9155810CC00E3C050 = {
 			isa = PBXGroup;
 			children = (
+				0349F26615618B4C00F5AEDB /* AudioToolbox.framework */,
+				0349F26415618B2800F5AEDB /* CoreAudio.framework */,
+				0349F26215618B1900F5AEDB /* CoreLocation.framework */,
 				6FB9A432156131ED004A7645 /* MapKit.framework */,
 				03E8420E155810CC00E3C050 /* Joined-API-iOS */,
 				03E8422C155810CD00E3C050 /* Joined-API-iOSTests */,
@@ -175,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				6FB9A43415613BA0004A7645 /* External */,
+				0349F1FA1561867B00F5AEDB /* JoinedBearingAPI */,
 				6FB9A44915613BA0004A7645 /* JoinedServerAPI */,
 				6FB9A42F15613145004A7645 /* MapViewAnnotation.h */,
 				6FB9A43015613145004A7645 /* MapViewAnnotation.m */,
@@ -376,6 +426,7 @@
 			files = (
 				03E84213155810CC00E3C050 /* InfoPlist.strings in Resources */,
 				03E8421F155810CD00E3C050 /* JOViewController.xib in Resources */,
+				03E19D8515619AFE008DEF50 /* bearing.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +482,11 @@
 				6FB9A46615613BA0004A7645 /* JOClient.m in Sources */,
 				6FB9A46715613BA0004A7645 /* JOFriend.m in Sources */,
 				6FB9A46815613BA0004A7645 /* JOUser.m in Sources */,
+				03E19D8615619AFE008DEF50 /* BearingCore.m in Sources */,
+				03E19D8715619AFE008DEF50 /* CompassView.m in Sources */,
+				03E19D8815619AFE008DEF50 /* DestinationViewController.m in Sources */,
+				03E19D8915619AFE008DEF50 /* Geiger.m in Sources */,
+				03E19D8A15619AFE008DEF50 /* Vibrator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
