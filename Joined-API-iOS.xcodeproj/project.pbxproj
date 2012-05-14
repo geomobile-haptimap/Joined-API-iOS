@@ -37,6 +37,11 @@
 		03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */; };
 		03E84241155810F100E3C050 /* JOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84240155810F100E3C050 /* JOClient.m */; };
 		03E842461558110C00E3C050 /* JOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E842451558110C00E3C050 /* JOUser.m */; };
+		6F44ED3415611B9400E016E1 /* JOFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F44ED3315611B9400E016E1 /* JOFriend.m */; };
+		6FB9A42715612490004A7645 /* JOFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42615612490004A7645 /* JOFriendListViewController.m */; };
+		6FB9A42E15613028004A7645 /* JOFriendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42D15613028004A7645 /* JOFriendLocationViewController.m */; };
+		6FB9A43115613145004A7645 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A43015613145004A7645 /* MapViewAnnotation.m */; };
+		6FB9A433156131ED004A7645 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB9A432156131ED004A7645 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +104,15 @@
 		03E84240155810F100E3C050 /* JOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOClient.m; sourceTree = "<group>"; };
 		03E842441558110C00E3C050 /* JOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOUser.h; sourceTree = "<group>"; };
 		03E842451558110C00E3C050 /* JOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOUser.m; sourceTree = "<group>"; };
+		6F44ED3215611B9400E016E1 /* JOFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriend.h; sourceTree = "<group>"; };
+		6F44ED3315611B9400E016E1 /* JOFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOFriend.m; sourceTree = "<group>"; };
+		6FB9A42515612490004A7645 /* JOFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriendListViewController.h; sourceTree = "<group>"; };
+		6FB9A42615612490004A7645 /* JOFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOFriendListViewController.m; sourceTree = "<group>"; };
+		6FB9A42C15613028004A7645 /* JOFriendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriendLocationViewController.h; sourceTree = "<group>"; };
+		6FB9A42D15613028004A7645 /* JOFriendLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOFriendLocationViewController.m; sourceTree = "<group>"; };
+		6FB9A42F15613145004A7645 /* MapViewAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewAnnotation.h; sourceTree = "<group>"; };
+		6FB9A43015613145004A7645 /* MapViewAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewAnnotation.m; sourceTree = "<group>"; };
+		6FB9A432156131ED004A7645 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB9A433156131ED004A7645 /* MapKit.framework in Frameworks */,
 				03E84209155810CC00E3C050 /* UIKit.framework in Frameworks */,
 				03E8420B155810CC00E3C050 /* Foundation.framework in Frameworks */,
 				03E8420D155810CC00E3C050 /* CoreGraphics.framework in Frameworks */,
@@ -147,6 +162,7 @@
 		03E841F9155810CC00E3C050 = {
 			isa = PBXGroup;
 			children = (
+				6FB9A432156131ED004A7645 /* MapKit.framework */,
 				03E8420E155810CC00E3C050 /* Joined-API-iOS */,
 				03E8422C155810CD00E3C050 /* Joined-API-iOSTests */,
 				03E84207155810CC00E3C050 /* Frameworks */,
@@ -177,8 +193,14 @@
 		03E8420E155810CC00E3C050 /* Joined-API-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				03E8424B155812EE00E3C050 /* External */,
 				03E8423E155810DD00E3C050 /* JoinedServerAPI */,
+				03E8424B155812EE00E3C050 /* External */,
+				6FB9A42F15613145004A7645 /* MapViewAnnotation.h */,
+				6FB9A43015613145004A7645 /* MapViewAnnotation.m */,
+				6FB9A42C15613028004A7645 /* JOFriendLocationViewController.h */,
+				6FB9A42D15613028004A7645 /* JOFriendLocationViewController.m */,
+				6FB9A42515612490004A7645 /* JOFriendListViewController.h */,
+				6FB9A42615612490004A7645 /* JOFriendListViewController.m */,
 				03E84217155810CC00E3C050 /* JOAppDelegate.h */,
 				03E84218155810CC00E3C050 /* JOAppDelegate.m */,
 				03E8421A155810CC00E3C050 /* JOViewController.h */,
@@ -234,6 +256,8 @@
 		03E84242155810F900E3C050 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				6F44ED3215611B9400E016E1 /* JOFriend.h */,
+				6F44ED3315611B9400E016E1 /* JOFriend.m */,
 				0310C713155818780077BBB9 /* JoinedHTTPClient.h */,
 				0310C714155818780077BBB9 /* JoinedHTTPClient.m */,
 				03E842441558110C00E3C050 /* JOUser.h */,
@@ -401,6 +425,10 @@
 				0310C715155818780077BBB9 /* JoinedHTTPClient.m in Sources */,
 				03356C53155912910080F0BE /* NSString+easyHash.m in Sources */,
 				03356C56155915380080F0BE /* JSONRequestOperation.m in Sources */,
+				6F44ED3415611B9400E016E1 /* JOFriend.m in Sources */,
+				6FB9A42715612490004A7645 /* JOFriendListViewController.m in Sources */,
+				6FB9A42E15613028004A7645 /* JOFriendLocationViewController.m in Sources */,
+				6FB9A43115613145004A7645 /* MapViewAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,7 +501,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -491,7 +519,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -504,7 +532,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Joined-API-iOS/Joined-API-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,7 +545,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Joined-API-iOS/Joined-API-iOS-Prefix.pch";
 				INFOPLIST_FILE = "Joined-API-iOS/Joined-API-iOS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

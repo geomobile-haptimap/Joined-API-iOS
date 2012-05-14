@@ -13,6 +13,7 @@
 typedef void (^WebServiceFailedBlock)(NSError *error);
 
 typedef void (^UserWebServiceSuccessBlock)(JOUser *user);
+typedef void (^FriendsWebServiceSuccessBlock)(NSArray *friends);
 
 @interface JOClient : NSObject
 
@@ -22,5 +23,7 @@ typedef void (^UserWebServiceSuccessBlock)(JOUser *user);
 - (id) initServer:(NSString*)joinedServerUrl andApiKey:(NSString*)joinedApiKey;
 
 - (void) loginUser:(NSString*)username andPassword:(NSString*)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
+
+- (void) getFriends:(JOUser*)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
 
 @end

@@ -13,25 +13,24 @@
 @synthesize userId = _userId;
 @synthesize userSecureToken = _userSecureToken;
 
-- (id) initWithJSON:(NSData*) jsonData
+- (id) initWithJSON:(NSDictionary*) json
 {
     self = [super init];
+
+//    NSData* jsonData= [jsonString dataUsingEncoding:NSUTF8StringEncoding];
+//    
+//    NSError* error;
+//
+//    NSDictionary* json = [NSJSONSerialization 
+//                          JSONObjectWithData:jsonData
+//                          options:kNilOptions 
+//                          error:&error];
     
-    /* PARSE JSON DATA */
+    NSNumber* jsonId = [json objectForKey:ID];
+    self.userId = [jsonId stringValue];
     
-    NSError* error;
-    NSDictionary* json = [NSJSONSerialization 
-                          JSONObjectWithData:jsonData
-                          options:kNilOptions 
-                          error:&error];
-    
-    NSLog([json description]);
-//    NSArray* idList = [json objectForKey:ID];
-//    self.userId = [idList objectAtIndex:0];
-    
-    NSString* secureTokenList = [json valueForKey:SECURE_TOKEN];
-    NSLog([secureTokenList description]);
-    self.userSecureToken = secureTokenList;
+    NSString* jsonSecureToken = [json valueForKey:SECURE_TOKEN];
+    self.userSecureToken = jsonSecureToken;
     
     return self;
 }

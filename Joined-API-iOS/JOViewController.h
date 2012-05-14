@@ -10,4 +10,9 @@
 
 @interface JOViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *usernameInputField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordInputField;
+
+- (IBAction)loginButtonPressed:(id)sender;
+
 @end

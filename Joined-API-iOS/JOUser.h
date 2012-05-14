@@ -13,6 +13,6 @@
 @property (atomic, strong) NSString* userId;
 @property (atomic, strong) NSString* userSecureToken;
 
-- (id) initWithJSON:(NSData*) jsonData;
+- (id) initWithJSON:(NSDictionary*) json;
 
 @end

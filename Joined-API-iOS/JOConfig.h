@@ -12,12 +12,12 @@
 /**
  * The URL of the Joined server.
  */
-#define JOINED_SERVER  @"http://joinedserver.geomobile.de:8011/friendfinder"
+#define JOINED_SERVER  @"https://joinedserver.geomobile.de:7012/friendfinder"
 
 /**
  * The unqique identifier for the public Joined API.
  */
-#define JOINED_API_KEY @"2234567890"
+#define JOINED_API_KEY @"5923078165"
 
 /* UNIT TEST */
 
