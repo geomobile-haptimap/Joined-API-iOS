@@ -22,6 +22,12 @@ typedef void (^FriendsWebServiceSuccessBlock)(NSArray *friends);
 
 - (id) initServer:(NSString*)joinedServerUrl andApiKey:(NSString*)joinedApiKey;
 
+/**
+ * This method enables users to login at the Joined server.
+ * 
+ * @param username The name of the user.
+ * @param password The password of the user.
+ */
 - (void) loginUser:(NSString*)username andPassword:(NSString*)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
 
 - (void) getFriends:(JOUser*)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;

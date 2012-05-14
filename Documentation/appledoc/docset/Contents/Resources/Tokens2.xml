@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFHTTPRequestOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFHTTPRequestOperation</TokenIdentifier>
+			<Abstract>AFHTTPRequestOperation is a subclass of AFURLConnectionOperation for requests using the HTTP or HTTPS protocols. It encapsulates the concept of acceptable status codes and content types, which determine the success or failure of a request.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setResponse:</TokenIdentifier>
+			<Abstract>The last HTTP response received by the operation's connection.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/response</TokenIdentifier>
+			<Abstract>The last HTTP response received by the operation's connection.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSHTTPURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setAcceptableStatusCodes:</TokenIdentifier>
+			<Abstract>Returns an NSIndexSet object containing the ranges of acceptable HTTP status codes. When non-nil, the operation will set the error property to an error in AFErrorDomain. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSIndexSet *acceptableStatusCodes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableStatusCodes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/acceptableStatusCodes</TokenIdentifier>
+			<Abstract>Returns an NSIndexSet object containing the ranges of acceptable HTTP status codes. When non-nil, the operation will set the error property to an error in AFErrorDomain. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSIndexSet *acceptableStatusCodes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableStatusCodes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setHasAcceptableStatusCode:</TokenIdentifier>
+			<Abstract>A Boolean value that corresponds to whether the status code of the response is within the specified set of acceptable status codes. Returns YES if acceptableStatusCodes is nil.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL hasAcceptableStatusCode</Declaration>
+			
+			
+			<Anchor>//api/name/hasAcceptableStatusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/hasAcceptableStatusCode</TokenIdentifier>
+			<Abstract>A Boolean value that corresponds to whether the status code of the response is within the specified set of acceptable status codes. Returns YES if acceptableStatusCodes is nil.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL hasAcceptableStatusCode</Declaration>
+			
+			
+			<Anchor>//api/name/hasAcceptableStatusCode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setAcceptableContentTypes:</TokenIdentifier>
+			<Abstract>Returns an NSSet object containing the acceptable MIME types. When non-nil, the operation will set the error property to an error in AFErrorDomain. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *acceptableContentTypes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableContentTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/acceptableContentTypes</TokenIdentifier>
+			<Abstract>Returns an NSSet object containing the acceptable MIME types. When non-nil, the operation will set the error property to an error in AFErrorDomain. See http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *acceptableContentTypes</Declaration>
+			
+			
+			<Anchor>//api/name/acceptableContentTypes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setHasAcceptableContentType:</TokenIdentifier>
+			<Abstract>A Boolean value that corresponds to whether the MIME type of the response is among the specified set of acceptable content types. Returns YES if acceptableContentTypes is nil.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL hasAcceptableContentType</Declaration>
+			
+			
+			<Anchor>//api/name/hasAcceptableContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/hasAcceptableContentType</TokenIdentifier>
+			<Abstract>A Boolean value that corresponds to whether the MIME type of the response is among the specified set of acceptable content types. Returns YES if acceptableContentTypes is nil.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) BOOL hasAcceptableContentType</Declaration>
+			
+			
+			<Anchor>//api/name/hasAcceptableContentType</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setSuccessCallbackQueue:</TokenIdentifier>
+			<Abstract>The callback dispatch queue on success. If NULL (default), the main queue is used.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) dispatch_queue_t successCallbackQueue</Declaration>
+			
+			
+			<Anchor>//api/name/successCallbackQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/successCallbackQueue</TokenIdentifier>
+			<Abstract>The callback dispatch queue on success. If NULL (default), the main queue is used.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) dispatch_queue_t successCallbackQueue</Declaration>
+			
+			
+			<Anchor>//api/name/successCallbackQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setFailureCallbackQueue:</TokenIdentifier>
+			<Abstract>The callback dispatch queue on failure. If NULL (default), the main queue is used.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) dispatch_queue_t failureCallbackQueue</Declaration>
+			
+			
+			<Anchor>//api/name/failureCallbackQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFHTTPRequestOperation/failureCallbackQueue</TokenIdentifier>
+			<Abstract>The callback dispatch queue on failure. If NULL (default), the main queue is used.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) dispatch_queue_t failureCallbackQueue</Declaration>
+			
+			
+			<Anchor>//api/name/failureCallbackQueue</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AFHTTPRequestOperation/canProcessRequest:</TokenIdentifier>
+			<Abstract>A Boolean value determining whether or not the class can process the specified request. For example, AFJSONRequestOperation may check to make sure the content type was application/json or the URL path extension was .json.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)canProcessRequest:(NSURLRequest *)urlRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract>The request that is determined to be supported or not supported for this class.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/canProcessRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPRequestOperation/setCompletionBlockWithSuccess:failure:</TokenIdentifier>
+			<Abstract>Sets the completionBlock property with a block that executes either the specified success or failure block, depending on the state of the request on completion. If error returns a value, which can be caused by an unacceptable status code or content type, then failure is executed. Otherwise, success is executed.</Abstract>
+			<DeclaredIn>AFHTTPRequestOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setCompletionBlockWithSuccess:(void ( ^ ) ( AFHTTPRequestOperation *operation , id responseObject ))success failure:(void ( ^ ) ( AFHTTPRequestOperation *operation , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract>The block to be executed on the completion of a successful request. This block has no return value and takes two arguments: the receiver operation and the object constructed from the response data of the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract>The block to be executed on the completion of an unsuccessful request. This block has no return value and takes two arguments: the receiver operation and the error that occured during the request.
+
+@discussion This method should be overridden in subclasses in order to specify the response object passed into the success block.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setCompletionBlockWithSuccess:failure:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

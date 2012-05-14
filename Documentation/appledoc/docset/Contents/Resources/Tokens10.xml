@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JOClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JOClient</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/loginUser:andPassword:success:failed:</TokenIdentifier>
+			<Abstract>This method enables users to login at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginUser:(NSString *)username andPassword:(NSString *)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract>The name of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password of the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/loginUser:andPassword:success:failed:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

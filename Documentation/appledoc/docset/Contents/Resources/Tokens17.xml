@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JoinedHTTPClient.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JoinedHTTPClient</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>JoinedHTTPClient.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

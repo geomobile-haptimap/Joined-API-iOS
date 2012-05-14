@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/Joined_API_iOSTests.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/Joined_API_iOSTests</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>Joined_API_iOSTests.h</DeclaredIn>
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

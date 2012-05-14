@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JOUser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JOUser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>JOUser.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>Joined-API-iOS</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="22"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>AFHTTPClient</Name>
+			<Path>Classes/AFHTTPClient.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>AFHTTPRequestOperation</Name>
+			<Path>Classes/AFHTTPRequestOperation.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>AFImageRequestOperation</Name>
+			<Path>Classes/AFImageRequestOperation.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>AFJSONRequestOperation</Name>
+			<Path>Classes/AFJSONRequestOperation.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>AFNetworkActivityIndicatorManager</Name>
+			<Path>Classes/AFNetworkActivityIndicatorManager.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>AFPropertyListRequestOperation</Name>
+			<Path>Classes/AFPropertyListRequestOperation.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>AFURLConnectionOperation</Name>
+			<Path>Classes/AFURLConnectionOperation.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>AFXMLRequestOperation</Name>
+			<Path>Classes/AFXMLRequestOperation.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>JOAppDelegate</Name>
+			<Path>Classes/JOAppDelegate.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>JOClient</Name>
+			<Path>Classes/JOClient.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>JOFriend</Name>
+			<Path>Classes/JOFriend.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>JOFriendListViewController</Name>
+			<Path>Classes/JOFriendListViewController.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>JOFriendLocationViewController</Name>
+			<Path>Classes/JOFriendLocationViewController.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>JOUser</Name>
+			<Path>Classes/JOUser.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>JOViewController</Name>
+			<Path>Classes/JOViewController.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>JSONRequestOperation</Name>
+			<Path>Classes/JSONRequestOperation.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>JoinedHTTPClient</Name>
+			<Path>Classes/JoinedHTTPClient.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>Joined_API_iOSTests</Name>
+			<Path>Classes/Joined_API_iOSTests.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>MapViewAnnotation</Name>
+			<Path>Classes/MapViewAnnotation.html</Path>
+		</Node>
+		
+		<Node id="20">
+			<Name>NSString(easyHash)</Name>
+			<Path>Categories/NSString+easyHash.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>UIImageView(AFNetworking)</Name>
+			<Path>Categories/UIImageView+AFNetworking.html</Path>
+		</Node>
+		
+		<Node id="22">
+			<Name>AFMultipartFormData</Name>
+			<Path>Protocols/AFMultipartFormData.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

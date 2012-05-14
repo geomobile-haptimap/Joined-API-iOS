@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AFURLConnectionOperation.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AFURLConnectionOperation</TokenIdentifier>
+			<Abstract>AFURLConnectionOperation is an NSOperation that implements NSURLConnection delegate methods.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setRunLoopModes:</TokenIdentifier>
+			<Abstract>The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing NSRunLoopCommonModes.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/runLoopModes</TokenIdentifier>
+			<Abstract>The run loop modes in which the operation will run on the network thread. By default, this is a single-member set containing NSRunLoopCommonModes.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *runLoopModes</Declaration>
+			
+			
+			<Anchor>//api/name/runLoopModes</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setRequest:</TokenIdentifier>
+			<Abstract>The request used by the operation's connection.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/request</TokenIdentifier>
+			<Abstract>The request used by the operation's connection.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURLRequest *request</Declaration>
+			
+			
+			<Anchor>//api/name/request</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setResponse:</TokenIdentifier>
+			<Abstract>The last response received by the operation's connection.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/response</TokenIdentifier>
+			<Abstract>The last response received by the operation's connection.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSURLResponse *response</Declaration>
+			
+			
+			<Anchor>//api/name/response</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setError:</TokenIdentifier>
+			<Abstract>The error, if any, that occured in the lifecycle of the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/error</TokenIdentifier>
+			<Abstract>The error, if any, that occured in the lifecycle of the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSError *error</Declaration>
+			
+			
+			<Anchor>//api/name/error</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setResponseData:</TokenIdentifier>
+			<Abstract>The data received during the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/responseData</TokenIdentifier>
+			<Abstract>The data received during the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, retain) NSData *responseData</Declaration>
+			
+			
+			<Anchor>//api/name/responseData</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setResponseString:</TokenIdentifier>
+			<Abstract>The string representation of the response data.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *responseString</Declaration>
+			
+			
+			<Anchor>//api/name/responseString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/responseString</TokenIdentifier>
+			<Abstract>The string representation of the response data.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, nonatomic, copy) NSString *responseString</Declaration>
+			
+			
+			<Anchor>//api/name/responseString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setInputStream:</TokenIdentifier>
+			<Abstract>The input stream used to read data to be sent during the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSInputStream *inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/inputStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/inputStream</TokenIdentifier>
+			<Abstract>The input stream used to read data to be sent during the request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSInputStream *inputStream</Declaration>
+			
+			
+			<Anchor>//api/name/inputStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setOutputStream:</TokenIdentifier>
+			<Abstract>The output stream that is used to write data received until the request is finished.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSOutputStream *outputStream</Declaration>
+			
+			
+			<Anchor>//api/name/outputStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AFURLConnectionOperation/outputStream</TokenIdentifier>
+			<Abstract>The output stream that is used to write data received until the request is finished.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSOutputStream *outputStream</Declaration>
+			
+			
+			<Anchor>//api/name/outputStream</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/initWithRequest:</TokenIdentifier>
+			<Abstract>Initializes and returns a newly allocated operation object with a url connection configured with the specified url request.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRequest:(NSURLRequest *)urlRequest</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract>The request object to be used by the operation connection.
+
+@discussion This is the designated initializer.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initWithRequest:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setUploadProgressBlock:</TokenIdentifier>
+			<Abstract>Sets a callback to be called when an undetermined number of bytes have been downloaded from the server.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setUploadProgressBlock:(void ( ^ ) ( NSInteger bytesWritten , NSInteger totalBytesWritten , NSInteger totalBytesExpectedToWrite ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes three arguments: the number of bytes written since the last time the upload progress block was called, the total bytes written, and the total bytes expected to be written during the request, as initially determined by the length of the HTTP body. This block may be called multiple times.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setUploadProgressBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setDownloadProgressBlock:</TokenIdentifier>
+			<Abstract>Sets a callback to be called when an undetermined number of bytes have been uploaded to the server.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDownloadProgressBlock:(void ( ^ ) ( NSInteger bytesRead , NSInteger totalBytesRead , NSInteger totalBytesExpectedToRead ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object to be called when an undetermined number of bytes have been uploaded to the server. This block has no return value and takes three arguments: the number of bytes read since the last time the upload progress block was called, the total bytes read, and the total bytes expected to be read during the request, as initially determined by the expected content size of the NSHTTPURLResponse object. This block may be called multiple times.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDownloadProgressBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setAuthenticationAgainstProtectionSpaceBlock:</TokenIdentifier>
+			<Abstract>Sets a block to be executed to determine whether the connection should be able to respond to a protection space's form of authentication, as handled by the NSURLConnectionDelegate method connection:canAuthenticateAgainstProtectionSpace:.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAuthenticationAgainstProtectionSpaceBlock:(BOOL ( ^ ) ( NSURLConnection *connection , NSURLProtectionSpace *protectionSpace ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object to be executed to determine whether the connection should be able to respond to a protection space's form of authentication. The block has a BOOL return type and takes two arguments: the URL connection object, and the protection space to authenticate against.
+
+@discussion If AFNETWORKINGALLOWINVALIDSSLCERTIFICATES is defined, connection:canAuthenticateAgainstProtectionSpace: will accept invalid SSL certificates, returning YES if the protection space authentication method is NSURLAuthenticationMethodServerTrust.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAuthenticationAgainstProtectionSpaceBlock:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFURLConnectionOperation/setAuthenticationChallengeBlock:</TokenIdentifier>
+			<Abstract>Sets a block to be executed when the connection must authenticate a challenge in order to download its request, as handled by the NSURLConnectionDelegate method connection:didReceiveAuthenticationChallenge:.</Abstract>
+			<DeclaredIn>AFURLConnectionOperation.h</DeclaredIn>			
+			
+			<Declaration>- (void)setAuthenticationChallengeBlock:(void ( ^ ) ( NSURLConnection *connection , NSURLAuthenticationChallenge *challenge ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>block</Name>
+					<Abstract>A block object to be executed when the connection must authenticate a challenge in order to download its request. The block has no return type and takes two arguments: the URL connection object, and the challenge that must be authenticated.
+
+@discussion If AFNETWORKINGALLOWINVALIDSSLCERTIFICATES is defined, connection:didReceiveAuthenticationChallenge: will attempt to have the challenge sender use credentials with invalid SSL certificates.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setAuthenticationChallengeBlock:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

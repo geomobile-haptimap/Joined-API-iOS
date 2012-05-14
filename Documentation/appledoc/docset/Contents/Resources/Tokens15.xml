@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/JOViewController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/JOViewController</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>JOViewController.h</DeclaredIn>
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>
