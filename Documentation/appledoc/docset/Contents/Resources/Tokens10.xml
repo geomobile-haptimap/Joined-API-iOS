@@ -1,33 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JOClient.html">
+	<File path="Classes/CompassView.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JOClient</TokenIdentifier>
-			<Abstract></Abstract>
-			<DeclaredIn>JOClient.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/CompassView</TokenIdentifier>
+			<Abstract>ComassView displays a compass rose pointing to the specified azimuth (e.g. target location)</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>
 			
 			<NodeRef refid="10"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JOClient/loginUser:andPassword:success:failed:</TokenIdentifier>
-			<Abstract>This method enables users to login at the Joined server.</Abstract>
-			<DeclaredIn>JOClient.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/CompassView/setImage:</TokenIdentifier>
+			<Abstract>Image of the compass rose</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
 			
-			<Declaration>- (void)loginUser:(NSString *)username andPassword:(NSString *)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>username</Name>
-					<Abstract>The name of the user.</Abstract>
-				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract>The password of the user.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
 			
-			<Anchor>//api/name/loginUser:andPassword:success:failed:</Anchor>
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CompassView/image</TokenIdentifier>
+			<Abstract>Image of the compass rose</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) UIImage *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CompassView/setAzimuth:</TokenIdentifier>
+			<Abstract>Current azimuth to display.</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDirection azimuth</Declaration>
+			
+			
+			<Anchor>//api/name/azimuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CompassView/azimuth</TokenIdentifier>
+			<Abstract>Current azimuth to display.</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDirection azimuth</Declaration>
+			
+			
+			<Anchor>//api/name/azimuth</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/CompassView/setRotationAnimated:</TokenIdentifier>
+			<Abstract>Boolean determining the animation status. (TRUE = Rotation is animated, FALSE = Rotation is not animated)</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isRotationAnimated) BOOL rotationAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/rotationAnimated</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/CompassView/rotationAnimated</TokenIdentifier>
+			<Abstract>Boolean determining the animation status. (TRUE = Rotation is animated, FALSE = Rotation is not animated)</Abstract>
+			<DeclaredIn>CompassView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign, getter=isRotationAnimated) BOOL rotationAnimated</Declaration>
+			
+			
+			<Anchor>//api/name/rotationAnimated</Anchor>
 		</Token>
 		
 	</File>

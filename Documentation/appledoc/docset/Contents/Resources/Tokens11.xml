@@ -1,15 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JOFriend.html">
+	<File path="Classes/DestinationViewController.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JOFriend</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/DestinationViewController</TokenIdentifier>
 			<Abstract></Abstract>
-			<DeclaredIn>JOFriend.h</DeclaredIn>
+			<DeclaredIn>DestinationViewController.h</DeclaredIn>
 			
 			<NodeRef refid="11"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DestinationViewController/initWithTitle:andCoordinate:</TokenIdentifier>
+			<Abstract>This function initializes the ViewController with a given Title (used for the map-icon) and a target location.</Abstract>
+			<DeclaredIn>DestinationViewController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithTitle:(NSString *)title andCoordinate:(CLLocationCoordinate2D)coordinate</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>title</Name>
+					<Abstract>Title of the target</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>coordinate Target location</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithTitle:andCoordinate:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

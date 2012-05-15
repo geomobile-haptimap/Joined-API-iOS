@@ -36,7 +36,13 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/deleteUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteUser:success:failed:</option>
+	
+	<option value="//api/name/getFriends:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- getFriends:success:failed:</option>
+	
 	<option value="//api/name/loginUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- loginUser:andPassword:success:failed:</option>
+	
+	<option value="//api/name/registerUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- registerUser:andPassword:success:failed:</option>
 	
 	
 	
@@ -64,7 +70,13 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteUser:success:failed:">deleteUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFriends:success:failed:">getFriends:success:failed:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginUser:andPassword:success:failed:">loginUser:andPassword:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerUser:andPassword:success:failed:">registerUser:andPassword:success:failed:</a></span></li>
 	
 </ul></li>
 
@@ -113,8 +125,29 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/registerUser:andPassword:success:failed:">&ndash;&nbsp;registerUser:andPassword:success:failed:</a></code>
+		<span class="tooltip"><p>This class demonstrates AppleDoc.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteUser:success:failed:">&ndash;&nbsp;deleteUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method deletes an existing user at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/loginUser:andPassword:success:failed:">&ndash;&nbsp;loginUser:andPassword:success:failed:</a></code>
 		<span class="tooltip"><p>This method enables users to login at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getFriends:success:failed:">&ndash;&nbsp;getFriends:success:failed:</a></code>
+		<span class="tooltip"><p>This method get the friends of an user from the Joined server.</p></span>
 	</span>
 	
 	
@@ -134,6 +167,100 @@
 					<div class="section section-methods">
 						<a title="Instance Methods" name="instance_methods"></a>
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteUser:success:failed:" title="deleteUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">deleteUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deletes an existing user at the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)deleteUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method deletes an existing user at the Joined server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getFriends:success:failed:" title="getFriends:success:failed:"></a>
+	<h3 class="subsubtitle method-title">getFriends:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method get the friends of an user from the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)getFriends:(JOUser *)<em>user</em> success:(FriendsWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method get the friends of an user from the Joined server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
 						
 						<div class="section-method">
 	<a name="//api/name/loginUser:andPassword:success:failed:" title="loginUser:andPassword:success:failed:"></a>
@@ -166,11 +293,61 @@
 	
 	
 	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The {@link JOUser} object that represents the logged in user.</p>
+	</div>
+	
 	
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
 		<p>This method enables users to login at the Joined server.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/registerUser:andPassword:success:failed:" title="registerUser:andPassword:success:failed:"></a>
+	<h3 class="subsubtitle method-title">registerUser:andPassword:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This class demonstrates AppleDoc.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)registerUser:(NSString *)<em>username</em> andPassword:(NSString *)<em>password</em> success:(UserWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This class demonstrates AppleDoc.</p>
+
+<p>A second paragraph comes after an empty line.</p>
+
+<pre><code>int i=0;
+i++;
+</code></pre>
+
+<p>And some sample code can also be in a block, but indented with a TAB.</p>
 	</div>
 	
 	
@@ -200,7 +377,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-14)</span><br />
+						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

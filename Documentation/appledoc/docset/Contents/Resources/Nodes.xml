@@ -24,11 +24,6 @@
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
 						<NodeRef refid="14"/>
-						<NodeRef refid="15"/>
-						<NodeRef refid="16"/>
-						<NodeRef refid="17"/>
-						<NodeRef refid="18"/>
-						<NodeRef refid="19"/>
 						
 					</Subnodes>
 				</Node>
@@ -38,8 +33,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="20"/>
-						<NodeRef refid="21"/>
+						<NodeRef refid="15"/>
 						
 					</Subnodes>
 				</Node>
@@ -49,7 +43,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="22"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
 						
 					</Subnodes>
 				</Node>
@@ -91,62 +88,50 @@
 			<Path>Classes/AFXMLRequestOperation.html</Path>
 		</Node>
 		<Node id="9">
-			<Name>JOAppDelegate</Name>
-			<Path>Classes/JOAppDelegate.html</Path>
+			<Name>BearingCore</Name>
+			<Path>Classes/BearingCore.html</Path>
 		</Node>
 		<Node id="10">
+			<Name>CompassView</Name>
+			<Path>Classes/CompassView.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>DestinationViewController</Name>
+			<Path>Classes/DestinationViewController.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>Geiger</Name>
+			<Path>Classes/Geiger.html</Path>
+		</Node>
+		<Node id="13">
 			<Name>JOClient</Name>
 			<Path>Classes/JOClient.html</Path>
 		</Node>
-		<Node id="11">
-			<Name>JOFriend</Name>
-			<Path>Classes/JOFriend.html</Path>
-		</Node>
-		<Node id="12">
-			<Name>JOFriendListViewController</Name>
-			<Path>Classes/JOFriendListViewController.html</Path>
-		</Node>
-		<Node id="13">
-			<Name>JOFriendLocationViewController</Name>
-			<Path>Classes/JOFriendLocationViewController.html</Path>
-		</Node>
 		<Node id="14">
-			<Name>JOUser</Name>
-			<Path>Classes/JOUser.html</Path>
-		</Node>
-		<Node id="15">
-			<Name>JOViewController</Name>
-			<Path>Classes/JOViewController.html</Path>
-		</Node>
-		<Node id="16">
-			<Name>JSONRequestOperation</Name>
-			<Path>Classes/JSONRequestOperation.html</Path>
-		</Node>
-		<Node id="17">
-			<Name>JoinedHTTPClient</Name>
-			<Path>Classes/JoinedHTTPClient.html</Path>
-		</Node>
-		<Node id="18">
-			<Name>Joined_API_iOSTests</Name>
-			<Path>Classes/Joined_API_iOSTests.html</Path>
-		</Node>
-		<Node id="19">
-			<Name>MapViewAnnotation</Name>
-			<Path>Classes/MapViewAnnotation.html</Path>
+			<Name>Vibrator</Name>
+			<Path>Classes/Vibrator.html</Path>
 		</Node>
 		
-		<Node id="20">
-			<Name>NSString(easyHash)</Name>
-			<Path>Categories/NSString+easyHash.html</Path>
-		</Node>
-		<Node id="21">
+		<Node id="15">
 			<Name>UIImageView(AFNetworking)</Name>
 			<Path>Categories/UIImageView+AFNetworking.html</Path>
 		</Node>
 		
-		<Node id="22">
+		<Node id="16">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>AzimuthStatusDelegate</Name>
+			<Path>Protocols/AzimuthStatusDelegate.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>BearingFeedbackDelegate</Name>
+			<Path>Protocols/BearingFeedbackDelegate.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>LocationStatusDelegate</Name>
+			<Path>Protocols/LocationStatusDelegate.html</Path>
 		</Node>
 		
 	</Library>

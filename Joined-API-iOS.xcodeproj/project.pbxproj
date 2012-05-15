@@ -29,7 +29,7 @@
 		03E84229155810CD00E3C050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420A155810CC00E3C050 /* Foundation.framework */; };
 		03E84231155810CD00E3C050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03E8422F155810CD00E3C050 /* InfoPlist.strings */; };
 		03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */; };
-		6F38AA5E15622BF6000958F0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F38AA5D15622BF6000958F0 /* UIImageView+AFNetworking.m */; };
+		6F38AA5E15622BF6000958F0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F38AA5D15622BF6000958F0 /* UIImageView+AFNetworking.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6FB9A42715612490004A7645 /* JOFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42615612490004A7645 /* JOFriendListViewController.m */; };
 		6FB9A42E15613028004A7645 /* JOFriendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42D15613028004A7645 /* JOFriendLocationViewController.m */; };
 		6FB9A43115613145004A7645 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A43015613145004A7645 /* MapViewAnnotation.m */; };

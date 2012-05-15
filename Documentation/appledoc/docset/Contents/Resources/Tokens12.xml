@@ -1,15 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JOFriendListViewController.html">
+	<File path="Classes/Geiger.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JOFriendListViewController</TokenIdentifier>
-			<Abstract></Abstract>
-			<DeclaredIn>JOFriendListViewController.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/Geiger</TokenIdentifier>
+			<Abstract>The geiger gives accoustic feedback. When the deviation to the heading is small, the feedback repeats very frequently. With a rising deviation the frequency decreases.</Abstract>
+			<DeclaredIn>Geiger.h</DeclaredIn>
 			
 			<NodeRef refid="12"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Geiger/setDeviation:</TokenIdentifier>
+			<Abstract>Current deviation to the target in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
+			<DeclaredIn>Geiger.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDirection deviation</Declaration>
+			
+			
+			<Anchor>//api/name/deviation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Geiger/deviation</TokenIdentifier>
+			<Abstract>Current deviation to the target in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
+			<DeclaredIn>Geiger.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CLLocationDirection deviation</Declaration>
+			
+			
+			<Anchor>//api/name/deviation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/Geiger/setEnabled:</TokenIdentifier>
+			<Abstract>Current status of the output. (TRUE = enabled, FALSE = disabled)</Abstract>
+			<DeclaredIn>Geiger.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/Geiger/enabled</TokenIdentifier>
+			<Abstract>Current status of the output. (TRUE = enabled, FALSE = disabled)</Abstract>
+			<DeclaredIn>Geiger.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly, getter=isEnabled) BOOL enabled</Declaration>
+			
+			
+			<Anchor>//api/name/enabled</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

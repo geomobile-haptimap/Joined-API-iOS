@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>JOFriendListViewController Class Reference</title>
+		<title>LocationStatusDelegate Protocol Reference</title>
 		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
@@ -11,7 +11,7 @@
 	<body>
 		<header id="top_header">
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">JOFriendListViewController Class Reference</h1>
+				<h1 class="hideInXcode">LocationStatusDelegate Protocol Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -24,12 +24,19 @@
 	
 	
 	
+	<option value="tasks">Tasks</option>
 	
 	
 	
 	
 	
 	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:">&nbsp;&nbsp;&nbsp;&nbsp;- locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</option>
 	
 	
 	
@@ -43,6 +50,9 @@
 
 
 
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
 
 
 
@@ -50,13 +60,20 @@
 
 
 
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:">locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</a></span></li>
+	
+</ul></li>
 
 
 			</ul>
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="JOFriendListViewController Class Reference" name="top"></a>
+				<a title="LocationStatusDelegate Protocol Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -65,18 +82,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">JOFriendListViewController Class Reference</h1>
+						<h1 class="title title-header">LocationStatusDelegate Protocol Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
-	<td class="specification-value">UITableViewController</td>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">JOFriendListViewController.h</td>
+	<td class="specification-value">BearingCore.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -85,6 +102,26 @@
 					
 					
 					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:">&ndash;&nbsp;locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</a></code>
+		<span class="tooltip"><p>This function is called when the current location has changed.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+					</div>
 					
 					
 					
@@ -92,6 +129,75 @@
 					
 					
 					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:" title="locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:"></a>
+	<h3 class="subsubtitle method-title">locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This function is called when the current location has changed.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)locationChangedToCurrentLocation:(CLLocation *)<em>currentLocation</em> andTargetLocation:(CLLocation *)<em>targetLocation</em> andTargetAzimuth:(CLLocationDirection)<em>targetAzimuth</em> andDistance:(CLLocationDistance)<em>distance</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>currentLocation</em></dt>
+			<dd><p>Current GPS location.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>targetLocation</em></dt>
+			<dd><p>Target GPS location.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>targetAzimuth</em></dt>
+			<dd><p>Azimuth to the target towards north in degrees. (0 = target is in northern direction, 90 = target is in eastern direction, &hellip;)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>distance</em></dt>
+			<dd><p>Distance to the target in metres.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This function is called when the current location has changed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">BearingCore.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
 				</div>
@@ -104,7 +210,7 @@
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-14)</span><br />
+						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-15)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						

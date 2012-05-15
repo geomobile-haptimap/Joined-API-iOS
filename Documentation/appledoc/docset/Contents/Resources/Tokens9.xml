@@ -1,15 +1,171 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JOAppDelegate.html">
+	<File path="Classes/BearingCore.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JOAppDelegate</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/BearingCore</TokenIdentifier>
 			<Abstract></Abstract>
-			<DeclaredIn>JOAppDelegate.h</DeclaredIn>
+			<DeclaredIn>BearingCore.h</DeclaredIn>
 			
 			<NodeRef refid="9"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setLocationManager:</TokenIdentifier>
+			<Abstract>The locationManager used by the toolkit. Default: automatically created. Can be modified or changed as desired.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/locationManager</TokenIdentifier>
+			<Abstract>The locationManager used by the toolkit. Default: automatically created. Can be modified or changed as desired.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocationManager *locationManager</Declaration>
+			
+			
+			<Anchor>//api/name/locationManager</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setCompassViewDelegate:</TokenIdentifier>
+			<Abstract>The locationManager used by the toolkit. Default: automatically created. Can be modified or changed as desired.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; compassViewDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/compassViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/compassViewDelegate</TokenIdentifier>
+			<Abstract>The locationManager used by the toolkit. Default: automatically created. Can be modified or changed as desired.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; compassViewDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/compassViewDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setLocationStatusDelegate:</TokenIdentifier>
+			<Abstract>Delegate that supports the ToolkitLocationStatusDelegate. Gets informed about location changes.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; locationStatusDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/locationStatusDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/locationStatusDelegate</TokenIdentifier>
+			<Abstract>Delegate that supports the ToolkitLocationStatusDelegate. Gets informed about location changes.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; locationStatusDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/locationStatusDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setAzimuthStatusDelegate:</TokenIdentifier>
+			<Abstract>Delegate that supports the ToolkitAzimuthStatusDelegate. Gets informed about azimuth changes.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; azimuthStatusDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/azimuthStatusDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/azimuthStatusDelegate</TokenIdentifier>
+			<Abstract>Delegate that supports the ToolkitAzimuthStatusDelegate. Gets informed about azimuth changes.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;&gt; azimuthStatusDelegate</Declaration>
+			
+			
+			<Anchor>//api/name/azimuthStatusDelegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setTargetLocation:</TokenIdentifier>
+			<Abstract>Location of the target.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocation *targetLocation</Declaration>
+			
+			
+			<Anchor>//api/name/targetLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/targetLocation</TokenIdentifier>
+			<Abstract>Location of the target.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) CLLocation *targetLocation</Declaration>
+			
+			
+			<Anchor>//api/name/targetLocation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/setBearingFeedback:</TokenIdentifier>
+			<Abstract>Sets the active outputs. Available: BearingFeedbackNone, BearingFeedbackVibration, BearingFeedbackGeiger.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BearingFeedback bearingFeedback</Declaration>
+			
+			
+			<Anchor>//api/name/bearingFeedback</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BearingCore/bearingFeedback</TokenIdentifier>
+			<Abstract>Sets the active outputs. Available: BearingFeedbackNone, BearingFeedbackVibration, BearingFeedbackGeiger.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BearingFeedback bearingFeedback</Declaration>
+			
+			
+			<Anchor>//api/name/bearingFeedback</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/start</TokenIdentifier>
+			<Abstract>This function starts the actual work of the toolkit. The locationmanager
+gets enabled and the heading gets determined. As soon as the location is aquired,
+delegates get notified.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/BearingCore/stop</TokenIdentifier>
+			<Abstract>This function stops the toolkit.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>

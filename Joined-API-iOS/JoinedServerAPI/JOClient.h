@@ -12,6 +12,7 @@
 
 typedef void (^WebServiceFailedBlock)(NSError *error);
 
+typedef void (^WebServiceSuccessBlock)(void);
 typedef void (^UserWebServiceSuccessBlock)(JOUser *user);
 typedef void (^FriendsWebServiceSuccessBlock)(NSArray *friends);
 
@@ -22,13 +23,22 @@ typedef void (^FriendsWebServiceSuccessBlock)(NSArray *friends);
 
 - (id) initServer:(NSString*)joinedServerUrl andApiKey:(NSString*)joinedApiKey;
 
-/**
- * This method enables users to login at the Joined server.
- * 
- * @param username The name of the user.
- * @param password The password of the user.
+/** This class demonstrates AppleDoc.
+ 
+ A second paragraph comes after an empty line.
+ 
+    int i=0;
+    i++;
+ 
+ And some sample code can also be in a block, but indented with a TAB.
  */
+- (void) registerUser:(NSString*)username andPassword:(NSString*)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
+
+- (void) deleteUser:(JOUser*)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
+
 - (void) loginUser:(NSString*)username andPassword:(NSString*)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
+
+- (void) logoutUser:(JOUser*)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
 
 - (void) getFriends:(JOUser*)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock;
 

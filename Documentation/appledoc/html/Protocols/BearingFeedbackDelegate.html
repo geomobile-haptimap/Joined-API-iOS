@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>JOClient Class Reference</title>
+		<title>BearingFeedbackDelegate Protocol Reference</title>
 		<meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
 		<meta id="xcode-display" name="xcode-display" content="render"/>
 		<meta name="viewport" content="width=550" />
@@ -11,7 +11,7 @@
 	<body>
 		<header id="top_header">
 			<div id="title" role="banner">
-				<h1 class="hideInXcode">JOClient Class Reference</h1>
+				<h1 class="hideInXcode">BearingFeedbackDelegate Protocol Reference</h1>
 			</div>
 			<ul id="headerButtons" role="toolbar">
 				<li id="toc_button">
@@ -36,13 +36,11 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
-	<option value="//api/name/deleteUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteUser:success:failed:</option>
+	<option value="//api/name/setDeviation:">&nbsp;&nbsp;&nbsp;&nbsp;- setDeviation:</option>
 	
-	<option value="//api/name/getFriends:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- getFriends:success:failed:</option>
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
 	
-	<option value="//api/name/loginUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- loginUser:andPassword:success:failed:</option>
-	
-	<option value="//api/name/registerUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- registerUser:andPassword:success:failed:</option>
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
 	
 	
 	
@@ -70,13 +68,11 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteUser:success:failed:">deleteUser:success:failed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDeviation:">setDeviation:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFriends:success:failed:">getFriends:success:failed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginUser:andPassword:success:failed:">loginUser:andPassword:success:failed:</a></span></li>
-	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerUser:andPassword:success:failed:">registerUser:andPassword:success:failed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
 	
 </ul></li>
 
@@ -85,7 +81,7 @@
 		</nav>
 		<article>
 			<div id="contents" class="isShowingTOC" role="main">
-				<a title="JOClient Class Reference" name="top"></a>
+				<a title="BearingFeedbackDelegate Protocol Reference" name="top"></a>
 				<div class="main-navigation navigation-top">
 					<ul>
 	<li><a href="../index.html">Index</a></li>
@@ -94,18 +90,18 @@
 				</div>
 				<div id="header">
 					<div class="section-header">
-						<h1 class="title title-header">JOClient Class Reference</h1>
+						<h1 class="title title-header">BearingFeedbackDelegate Protocol Reference</h1>
 					</div>		
 				</div>
 				<div id="container">	
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
 						<tr>
-	<td class="specification-title">Inherits from</td>
+	<td class="specification-title">Conforms to</td>
 	<td class="specification-value">NSObject</td>
 </tr><tr>
 	<td class="specification-title">Declared in</td>
-	<td class="specification-value">JOClient.h</td>
+	<td class="specification-value">BearingCore.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -125,32 +121,25 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
-		<code><a href="#//api/name/registerUser:andPassword:success:failed:">&ndash;&nbsp;registerUser:andPassword:success:failed:</a></code>
-		<span class="tooltip"><p>This class demonstrates AppleDoc.</p></span>
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		<span class="tooltip"><p>This function starts the output.</p></span>
 	</span>
 	
-	
+	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/deleteUser:success:failed:">&ndash;&nbsp;deleteUser:success:failed:</a></code>
-		<span class="tooltip"><p>This method deletes an existing user at the Joined server.</p></span>
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		<span class="tooltip"><p>This function stops the output.</p></span>
 	</span>
 	
-	
+	<span class="task-item-suffix">required method</span>
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/loginUser:andPassword:success:failed:">&ndash;&nbsp;loginUser:andPassword:success:failed:</a></code>
-		<span class="tooltip"><p>This method enables users to login at the Joined server.</p></span>
+		<code><a href="#//api/name/setDeviation:">&ndash;&nbsp;setDeviation:</a></code>
+		<span class="tooltip"><p>This function is called when the deviation to the target-location has changed.</p></span>
 	</span>
 	
-	
-</li><li>
-	<span class="tooltip">
-		<code><a href="#//api/name/getFriends:success:failed:">&ndash;&nbsp;getFriends:success:failed:</a></code>
-		<span class="tooltip"><p>This method get the friends of an user from the Joined server.</p></span>
-	</span>
-	
-	
+	<span class="task-item-suffix">required method</span>
 </li>
 						</ul>
 						
@@ -169,25 +158,25 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
-	<a name="//api/name/deleteUser:success:failed:" title="deleteUser:success:failed:"></a>
-	<h3 class="subsubtitle method-title">deleteUser:success:failed:</h3>
+	<a name="//api/name/setDeviation:" title="setDeviation:"></a>
+	<h3 class="subsubtitle method-title">setDeviation:</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method deletes an existing user at the Joined server.</p>
+		<p>This function is called when the deviation to the target-location has changed.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)deleteUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)setDeviation:(CLLocationDirection)<em>deviation</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
 		<h4 class="method-subtitle parameter-title">Parameters</h4>
 		
 		<dl class="argument-def parameter-def">
-			<dt><em>user</em></dt>
-			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
+			<dt><em>deviation</em></dt>
+			<dd><p>Deviation to the target-location in degrees. (0 = target is straight ahead, 90 = to the right, &hellip;)</p></dd>
 		</dl>
 		
 	</div>
@@ -198,7 +187,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method deletes an existing user at the Joined server.</p>
+		<p>This function is called when the deviation to the target-location has changed.</p>
 	</div>
 	
 	
@@ -209,35 +198,25 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JOClient.h</code><br />
+		<code class="declared-in-ref">BearingCore.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getFriends:success:failed:" title="getFriends:success:failed:"></a>
-	<h3 class="subsubtitle method-title">getFriends:success:failed:</h3>
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method get the friends of an user from the Joined server.</p>
+		<p>This function starts the output.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)getFriends:(JOUser *)<em>user</em> success:(FriendsWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)start</code></div>
 	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>user</em></dt>
-			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
-		</dl>
-		
-	</div>
 	
 	
 	
@@ -245,7 +224,7 @@
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method get the friends of an user from the Joined server.</p>
+		<p>This function starts the output.</p>
 	</div>
 	
 	
@@ -256,53 +235,33 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JOClient.h</code><br />
+		<code class="declared-in-ref">BearingCore.h</code><br />
 	</div>				
 	
 	
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/loginUser:andPassword:success:failed:" title="loginUser:andPassword:success:failed:"></a>
-	<h3 class="subsubtitle method-title">loginUser:andPassword:success:failed:</h3>
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
 	
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This method enables users to login at the Joined server.</p>
+		<p>This function stops the output.</p>
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)loginUser:(NSString *)<em>username</em> andPassword:(NSString *)<em>password</em> success:(UserWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
-	
-	
-	<div class="method-subsection arguments-section parameters">
-		<h4 class="method-subtitle parameter-title">Parameters</h4>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>username</em></dt>
-			<dd><p>The name of the user.</p></dd>
-		</dl>
-		
-		<dl class="argument-def parameter-def">
-			<dt><em>password</em></dt>
-			<dd><p>The password of the user.</p></dd>
-		</dl>
-		
-	</div>
+	<div class="method-subsection method-declaration"><code>- (void)stop</code></div>
 	
 	
 	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The {@link JOUser} object that represents the logged in user.</p>
-	</div>
 	
 	
 	
 	<div class="method-subsection discussion-section">
 		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method enables users to login at the Joined server.</p>
+		<p>This function stops the output.</p>
 	</div>
 	
 	
@@ -313,52 +272,7 @@
 	
 	<div class="method-subsection declared-in-section">
 		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JOClient.h</code><br />
-	</div>				
-	
-	
-</div>
-						
-						<div class="section-method">
-	<a name="//api/name/registerUser:andPassword:success:failed:" title="registerUser:andPassword:success:failed:"></a>
-	<h3 class="subsubtitle method-title">registerUser:andPassword:success:failed:</h3>
-	
-	
-	
-	<div class="method-subsection brief-description">
-		<p>This class demonstrates AppleDoc.</p>
-	</div>		
-	
-	
-	<div class="method-subsection method-declaration"><code>- (void)registerUser:(NSString *)<em>username</em> andPassword:(NSString *)<em>password</em> success:(UserWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This class demonstrates AppleDoc.</p>
-
-<p>A second paragraph comes after an empty line.</p>
-
-<pre><code>int i=0;
-i++;
-</code></pre>
-
-<p>And some sample code can also be in a block, but indented with a TAB.</p>
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection declared-in-section">
-		<h4 class="method-subtitle">Declared In</h4>
-		<code class="declared-in-ref">JOClient.h</code><br />
+		<code class="declared-in-ref">BearingCore.h</code><br />
 	</div>				
 	
 	

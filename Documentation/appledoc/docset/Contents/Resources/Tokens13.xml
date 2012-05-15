@@ -1,15 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/JOFriendLocationViewController.html">
+	<File path="Classes/JOClient.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/JOFriendLocationViewController</TokenIdentifier>
+			<TokenIdentifier>//apple_ref/occ/cl/JOClient</TokenIdentifier>
 			<Abstract></Abstract>
-			<DeclaredIn>JOFriendLocationViewController.h</DeclaredIn>
+			<DeclaredIn>JOClient.h</DeclaredIn>
 			
 			<NodeRef refid="13"/>
 		</Token>
 		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/registerUser:andPassword:success:failed:</TokenIdentifier>
+			<Abstract>This class demonstrates AppleDoc.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)registerUser:(NSString *)username andPassword:(NSString *)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			
+			
+			<Anchor>//api/name/registerUser:andPassword:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/deleteUser:success:failed:</TokenIdentifier>
+			<Abstract>This method deletes an existing user at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract>The {@link JOUser} object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/loginUser:andPassword:success:failed:</TokenIdentifier>
+			<Abstract>This method enables users to login at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)loginUser:(NSString *)username andPassword:(NSString *)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract>The name of the user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password of the user.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract>The {@link JOUser} object that represents the logged in user.</Abstract></ReturnValue>
+			<Anchor>//api/name/loginUser:andPassword:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/getFriends:success:failed:</TokenIdentifier>
+			<Abstract>This method get the friends of an user from the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)getFriends:(JOUser *)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract>The {@link JOUser} object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFriends:success:failed:</Anchor>
+		</Token>
 		
 	</File>
 </Tokens>
