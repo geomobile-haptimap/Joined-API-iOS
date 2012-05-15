@@ -6,7 +6,7 @@
 //  Copyright 2011 GeoMobile GmbH. All rights reserved.
 //
 
-#import "NSString+easyHash.h"
+#import "JONSString+easyHash.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString(easyHash)

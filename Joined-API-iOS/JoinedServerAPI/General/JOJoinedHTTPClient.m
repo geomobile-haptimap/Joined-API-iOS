@@ -6,16 +6,16 @@
 //  Copyright (c) 2011 GeoMobile. All rights reserved.
 //
 
-#import "JoinedHTTPClient.h"
+#import "JOJoinedHTTPClient.h"
 
-@implementation JoinedHTTPClient
+@implementation JOJoinedHTTPClient
 
-+ (JoinedHTTPClient*)sharedClient
++ (JOJoinedHTTPClient*)sharedClient
 {
-    static JoinedHTTPClient *instance = nil;
+    static JOJoinedHTTPClient *instance = nil;
     if (!instance)
     {
-        instance = [[JoinedHTTPClient alloc] init];
+        instance = [[JOJoinedHTTPClient alloc] init];
     }
     return instance;
 }

@@ -6,9 +6,9 @@
 //  Copyright (c) 2012 GeoMobile GmbH. All rights reserved.
 //
 
-#import "JSONRequestOperation.h"
+#import "JOJSONRequestOperation.h"
 
-@implementation JSONRequestOperation
+@implementation JOJSONRequestOperation
 
 - (BOOL)connection:(NSURLConnection *)connection canAuthenticateAgainstProtectionSpace:(NSURLProtectionSpace *)protectionSpace
 {

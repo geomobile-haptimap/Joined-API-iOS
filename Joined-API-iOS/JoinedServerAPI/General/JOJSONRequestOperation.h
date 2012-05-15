@@ -8,6 +8,6 @@
 
 #import "AFJSONRequestOperation.h"
 
-@interface JSONRequestOperation : AFJSONRequestOperation
+@interface JOJSONRequestOperation : AFJSONRequestOperation
 
 @end

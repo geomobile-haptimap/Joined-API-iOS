@@ -8,9 +8,9 @@
 
 #import "JOClient.h"
 
-#import "JoinedHTTPClient.h"
-#import "NSString+easyHash.h"
-#import "JSONRequestOperation.h"
+#import "JOJoinedHTTPClient.h"
+#import "JONSString+easyHash.h"
+#import "JOJSONRequestOperation.h"
 #import "JOFriend.h"
 
 @implementation JOClient
@@ -51,7 +51,7 @@
     
     /* EXECUTE SERVICE */
     
-    AFJSONRequestOperation* operation = [JSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) 
+    AFJSONRequestOperation* operation = [JOJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) 
     {
         NSLog(@"success JSON %@", responseObject);
         
@@ -85,7 +85,7 @@
     
     /* EXECUTE SERVICE */
     
-    AFJSONRequestOperation* operation = [JSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) 
+    AFJSONRequestOperation* operation = [JOJSONRequestOperation JSONRequestOperationWithRequest:request success:^(NSURLRequest *request, NSHTTPURLResponse *response, id responseObject) 
     {
         NSLog(@"success JSON %@", responseObject);     
         

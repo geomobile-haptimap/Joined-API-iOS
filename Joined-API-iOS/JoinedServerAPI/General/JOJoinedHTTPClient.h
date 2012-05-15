@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "AFNetworking.h"
 
-@interface JoinedHTTPClient : AFHTTPClient
+@interface JOJoinedHTTPClient : AFHTTPClient
 
-+ (JoinedHTTPClient*)sharedClient;
++ (JOJoinedHTTPClient*)sharedClient;
 
 @end

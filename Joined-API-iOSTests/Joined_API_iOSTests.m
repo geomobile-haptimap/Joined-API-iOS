@@ -8,6 +8,8 @@
 
 #import "Joined_API_iOSTests.h"
 
+#import "JOClient.h"
+
 @implementation Joined_API_iOSTests
 
 - (void)setUp
@@ -24,9 +26,29 @@
     [super tearDown];
 }
 
-- (void)testExample
+/**
+ * This method ...
+ */
+- (void)testLogin
 {
-    STFail(@"Unit tests are not implemented yet in Joined-API-iOSTests");
+    /* LOGIN USER */
+    
+    JOClient* client = [[JOClient alloc] initServer:JOINED_SERVER andApiKey:JOINED_API_KEY];
+    
+    NSString* username = @"b.baranski"; 
+    NSString* password = @"b.baranski";
+    
+    JOUser *userLogin = nil;
+    
+    [client loginUser:username andPassword:password success:^(JOUser *user) 
+    {  
+        STFail(@"Login failed");        
+    } failed:^(NSError *error) 
+    {
+        STFail(@"Login failed");
+    } ];
+    
+    [NSThread sleepForTimeInterval:10.00];  
 }
 
 @end

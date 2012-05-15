@@ -29,6 +29,7 @@
 		03E84229155810CD00E3C050 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03E8420A155810CC00E3C050 /* Foundation.framework */; };
 		03E84231155810CD00E3C050 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 03E8422F155810CD00E3C050 /* InfoPlist.strings */; };
 		03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */; };
+		6F38AA5E15622BF6000958F0 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F38AA5D15622BF6000958F0 /* UIImageView+AFNetworking.m */; };
 		6FB9A42715612490004A7645 /* JOFriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42615612490004A7645 /* JOFriendListViewController.m */; };
 		6FB9A42E15613028004A7645 /* JOFriendLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A42D15613028004A7645 /* JOFriendLocationViewController.m */; };
 		6FB9A43115613145004A7645 /* MapViewAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A43015613145004A7645 /* MapViewAnnotation.m */; };
@@ -42,13 +43,12 @@
 		6FB9A46015613BA0004A7645 /* AFPropertyListRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A44415613BA0004A7645 /* AFPropertyListRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6FB9A46115613BA0004A7645 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A44615613BA0004A7645 /* AFURLConnectionOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		6FB9A46215613BA0004A7645 /* AFXMLRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A44815613BA0004A7645 /* AFXMLRequestOperation.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6FB9A46315613BA0004A7645 /* JoinedHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A44E15613BA0004A7645 /* JoinedHTTPClient.m */; };
-		6FB9A46415613BA0004A7645 /* JSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45015613BA0004A7645 /* JSONRequestOperation.m */; };
-		6FB9A46515613BA0004A7645 /* NSString+easyHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45215613BA0004A7645 /* NSString+easyHash.m */; };
+		6FB9A46315613BA0004A7645 /* JOJoinedHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A44E15613BA0004A7645 /* JOJoinedHTTPClient.m */; };
+		6FB9A46415613BA0004A7645 /* JOJSONRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45015613BA0004A7645 /* JOJSONRequestOperation.m */; };
+		6FB9A46515613BA0004A7645 /* JONSString+easyHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45215613BA0004A7645 /* JONSString+easyHash.m */; };
 		6FB9A46615613BA0004A7645 /* JOClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45415613BA0004A7645 /* JOClient.m */; };
 		6FB9A46715613BA0004A7645 /* JOFriend.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45715613BA0004A7645 /* JOFriend.m */; };
 		6FB9A46815613BA0004A7645 /* JOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A45915613BA0004A7645 /* JOUser.m */; };
-		6FB9A46B15613BFF004A7645 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FB9A46A15613BFF004A7645 /* UIImageView+AFNetworking.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +96,8 @@
 		03E84230155810CD00E3C050 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		03E84232155810CD00E3C050 /* Joined_API_iOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Joined_API_iOSTests.h; sourceTree = "<group>"; };
 		03E84233155810CD00E3C050 /* Joined_API_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Joined_API_iOSTests.m; sourceTree = "<group>"; };
+		6F38AA5C15622BF6000958F0 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		6F38AA5D15622BF6000958F0 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 		6FB9A42515612490004A7645 /* JOFriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriendListViewController.h; sourceTree = "<group>"; };
 		6FB9A42615612490004A7645 /* JOFriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOFriendListViewController.m; sourceTree = "<group>"; };
 		6FB9A42C15613028004A7645 /* JOFriendLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriendLocationViewController.h; sourceTree = "<group>"; };
@@ -123,20 +125,18 @@
 		6FB9A44715613BA0004A7645 /* AFXMLRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFXMLRequestOperation.h; sourceTree = "<group>"; };
 		6FB9A44815613BA0004A7645 /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		6FB9A44B15613BA0004A7645 /* JOConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOConfig.h; sourceTree = "<group>"; };
-		6FB9A44D15613BA0004A7645 /* JoinedHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinedHTTPClient.h; sourceTree = "<group>"; };
-		6FB9A44E15613BA0004A7645 /* JoinedHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinedHTTPClient.m; sourceTree = "<group>"; };
-		6FB9A44F15613BA0004A7645 /* JSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRequestOperation.h; sourceTree = "<group>"; };
-		6FB9A45015613BA0004A7645 /* JSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONRequestOperation.m; sourceTree = "<group>"; };
-		6FB9A45115613BA0004A7645 /* NSString+easyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+easyHash.h"; sourceTree = "<group>"; };
-		6FB9A45215613BA0004A7645 /* NSString+easyHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+easyHash.m"; sourceTree = "<group>"; };
+		6FB9A44D15613BA0004A7645 /* JOJoinedHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOJoinedHTTPClient.h; sourceTree = "<group>"; };
+		6FB9A44E15613BA0004A7645 /* JOJoinedHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOJoinedHTTPClient.m; sourceTree = "<group>"; };
+		6FB9A44F15613BA0004A7645 /* JOJSONRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOJSONRequestOperation.h; sourceTree = "<group>"; };
+		6FB9A45015613BA0004A7645 /* JOJSONRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOJSONRequestOperation.m; sourceTree = "<group>"; };
+		6FB9A45115613BA0004A7645 /* JONSString+easyHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JONSString+easyHash.h"; sourceTree = "<group>"; };
+		6FB9A45215613BA0004A7645 /* JONSString+easyHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JONSString+easyHash.m"; sourceTree = "<group>"; };
 		6FB9A45315613BA0004A7645 /* JOClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOClient.h; sourceTree = "<group>"; };
 		6FB9A45415613BA0004A7645 /* JOClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOClient.m; sourceTree = "<group>"; };
 		6FB9A45615613BA0004A7645 /* JOFriend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOFriend.h; sourceTree = "<group>"; };
 		6FB9A45715613BA0004A7645 /* JOFriend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOFriend.m; sourceTree = "<group>"; };
 		6FB9A45815613BA0004A7645 /* JOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOUser.h; sourceTree = "<group>"; };
 		6FB9A45915613BA0004A7645 /* JOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOUser.m; sourceTree = "<group>"; };
-		6FB9A46915613BFF004A7645 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
-		6FB9A46A15613BFF004A7645 /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +283,8 @@
 		6FB9A43515613BA0004A7645 /* AFNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				6F38AA5C15622BF6000958F0 /* UIImageView+AFNetworking.h */,
+				6F38AA5D15622BF6000958F0 /* UIImageView+AFNetworking.m */,
 				6FB9A43615613BA0004A7645 /* AFHTTPClient.h */,
 				6FB9A43715613BA0004A7645 /* AFHTTPClient.m */,
 				6FB9A43815613BA0004A7645 /* AFHTTPRequestOperation.h */,
@@ -329,14 +331,12 @@
 		6FB9A44C15613BA0004A7645 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				6FB9A46915613BFF004A7645 /* UIImageView+AFNetworking.h */,
-				6FB9A46A15613BFF004A7645 /* UIImageView+AFNetworking.m */,
-				6FB9A44D15613BA0004A7645 /* JoinedHTTPClient.h */,
-				6FB9A44E15613BA0004A7645 /* JoinedHTTPClient.m */,
-				6FB9A44F15613BA0004A7645 /* JSONRequestOperation.h */,
-				6FB9A45015613BA0004A7645 /* JSONRequestOperation.m */,
-				6FB9A45115613BA0004A7645 /* NSString+easyHash.h */,
-				6FB9A45215613BA0004A7645 /* NSString+easyHash.m */,
+				6FB9A44D15613BA0004A7645 /* JOJoinedHTTPClient.h */,
+				6FB9A44E15613BA0004A7645 /* JOJoinedHTTPClient.m */,
+				6FB9A44F15613BA0004A7645 /* JOJSONRequestOperation.h */,
+				6FB9A45015613BA0004A7645 /* JOJSONRequestOperation.m */,
+				6FB9A45115613BA0004A7645 /* JONSString+easyHash.h */,
+				6FB9A45215613BA0004A7645 /* JONSString+easyHash.m */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -476,9 +476,9 @@
 				6FB9A46015613BA0004A7645 /* AFPropertyListRequestOperation.m in Sources */,
 				6FB9A46115613BA0004A7645 /* AFURLConnectionOperation.m in Sources */,
 				6FB9A46215613BA0004A7645 /* AFXMLRequestOperation.m in Sources */,
-				6FB9A46315613BA0004A7645 /* JoinedHTTPClient.m in Sources */,
-				6FB9A46415613BA0004A7645 /* JSONRequestOperation.m in Sources */,
-				6FB9A46515613BA0004A7645 /* NSString+easyHash.m in Sources */,
+				6FB9A46315613BA0004A7645 /* JOJoinedHTTPClient.m in Sources */,
+				6FB9A46415613BA0004A7645 /* JOJSONRequestOperation.m in Sources */,
+				6FB9A46515613BA0004A7645 /* JONSString+easyHash.m in Sources */,
 				6FB9A46615613BA0004A7645 /* JOClient.m in Sources */,
 				6FB9A46715613BA0004A7645 /* JOFriend.m in Sources */,
 				6FB9A46815613BA0004A7645 /* JOUser.m in Sources */,
@@ -487,6 +487,7 @@
 				03E19D8815619AFE008DEF50 /* DestinationViewController.m in Sources */,
 				03E19D8915619AFE008DEF50 /* Geiger.m in Sources */,
 				03E19D8A15619AFE008DEF50 /* Vibrator.m in Sources */,
+				6F38AA5E15622BF6000958F0 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +496,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				03E84234155810CD00E3C050 /* Joined_API_iOSTests.m in Sources */,
-				6FB9A46B15613BFF004A7645 /* UIImageView+AFNetworking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
