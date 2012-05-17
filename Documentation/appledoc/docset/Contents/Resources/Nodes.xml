@@ -24,6 +24,9 @@
 						<NodeRef refid="12"/>
 						<NodeRef refid="13"/>
 						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
 						
 					</Subnodes>
 				</Node>
@@ -33,7 +36,7 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="15"/>
+						<NodeRef refid="18"/>
 						
 					</Subnodes>
 				</Node>
@@ -43,10 +46,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="16"/>
-						<NodeRef refid="17"/>
-						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
 						
 					</Subnodes>
 				</Node>
@@ -108,28 +111,40 @@
 			<Path>Classes/JOClient.html</Path>
 		</Node>
 		<Node id="14">
+			<Name>JOFriend</Name>
+			<Path>Classes/JOFriend.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>JOMessage</Name>
+			<Path>Classes/JOMessage.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>JOUser</Name>
+			<Path>Classes/JOUser.html</Path>
+		</Node>
+		<Node id="17">
 			<Name>Vibrator</Name>
 			<Path>Classes/Vibrator.html</Path>
 		</Node>
 		
-		<Node id="15">
+		<Node id="18">
 			<Name>UIImageView(AFNetworking)</Name>
 			<Path>Categories/UIImageView+AFNetworking.html</Path>
 		</Node>
 		
-		<Node id="16">
+		<Node id="19">
 			<Name>AFMultipartFormData</Name>
 			<Path>Protocols/AFMultipartFormData.html</Path>
 		</Node>
-		<Node id="17">
+		<Node id="20">
 			<Name>AzimuthStatusDelegate</Name>
 			<Path>Protocols/AzimuthStatusDelegate.html</Path>
 		</Node>
-		<Node id="18">
+		<Node id="21">
 			<Name>BearingFeedbackDelegate</Name>
 			<Path>Protocols/BearingFeedbackDelegate.html</Path>
 		</Node>
-		<Node id="19">
+		<Node id="22">
 			<Name>LocationStatusDelegate</Name>
 			<Path>Protocols/LocationStatusDelegate.html</Path>
 		</Node>

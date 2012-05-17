@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/LocationStatusDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/LocationStatusDelegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/LocationStatusDelegate/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</TokenIdentifier>
+			<Abstract>This function is called when the current location has changed.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)locationChangedToCurrentLocation:(CLLocation *)currentLocation andTargetLocation:(CLLocation *)targetLocation andTargetAzimuth:(CLLocationDirection)targetAzimuth andDistance:(CLLocationDistance)distance</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>currentLocation</Name>
+					<Abstract>Current GPS location.</Abstract>
+				</Parameter><Parameter>
+					<Name>targetLocation</Name>
+					<Abstract>Target GPS location.</Abstract>
+				</Parameter><Parameter>
+					<Name>targetAzimuth</Name>
+					<Abstract>Azimuth to the target towards north in degrees. (0 = target is in northern direction, 90 = target is in eastern direction, ...)</Abstract>
+				</Parameter><Parameter>
+					<Name>distance</Name>
+					<Abstract>Distance to the target in metres.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/locationChangedToCurrentLocation:andTargetLocation:andTargetAzimuth:andDistance:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

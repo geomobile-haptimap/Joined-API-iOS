@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/BearingFeedbackDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/BearingFeedbackDelegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/start</TokenIdentifier>
+			<Abstract>This function starts the output.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/stop</TokenIdentifier>
+			<Abstract>This function stops the output.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/setDeviation:</TokenIdentifier>
+			<Abstract>This function is called when the deviation to the target-location has changed.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)setDeviation:(CLLocationDirection)deviation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>deviation</Name>
+					<Abstract>Deviation to the target-location in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setDeviation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

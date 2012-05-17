@@ -1,63 +1,245 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Vibrator.html">
+	<File path="Classes/JOFriend.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Vibrator</TokenIdentifier>
-			<Abstract>The vibrator gives tactile feedback using a defined pattern:
-Target is ...
-straight ahead: one vibration repeated every 2 seconds
-to the right: two vibrations seperated by a 500ms break and repeated every 2 seconds
-to the left: three vibrations seperated by a 500ms break and repeated every 2 seconds
-behind: four vibrations seperated by a 500ms break and repeated every 2 seconds</Abstract>
-			<DeclaredIn>Vibrator.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/JOFriend</TokenIdentifier>
+			<Abstract>This class contains various methods for receiving information about a user.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>
 			
 			<NodeRef refid="14"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Vibrator/setDeviation:</TokenIdentifier>
-			<Abstract>Current deviation to the target in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
-			<DeclaredIn>Vibrator.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setNickname:</TokenIdentifier>
+			<Abstract>This property is the nickname of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CLLocationDirection deviation</Declaration>
+			<Declaration>@property (atomic, strong) NSString *nickname</Declaration>
 			
 			
-			<Anchor>//api/name/deviation</Anchor>
+			<Anchor>//api/name/nickname</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Vibrator/deviation</TokenIdentifier>
-			<Abstract>Current deviation to the target in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
-			<DeclaredIn>Vibrator.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/nickname</TokenIdentifier>
+			<Abstract>This property is the nickname of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
 			
-			<Declaration>@property (nonatomic, assign) CLLocationDirection deviation</Declaration>
+			<Declaration>@property (atomic, strong) NSString *nickname</Declaration>
 			
 			
-			<Anchor>//api/name/deviation</Anchor>
+			<Anchor>//api/name/nickname</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Vibrator/setEnabled:</TokenIdentifier>
-			<Abstract>Current status of the output. (TRUE = enabled, FALSE = disabled)</Abstract>
-			<DeclaredIn>Vibrator.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setLastPosUpdate:</TokenIdentifier>
+			<Abstract>This property is the time point of the last position update of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, getter=isEnabled) BOOL enabled</Declaration>
+			<Declaration>@property (atomic, strong) NSNumber *lastPosUpdate</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/lastPosUpdate</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/Vibrator/enabled</TokenIdentifier>
-			<Abstract>Current status of the output. (TRUE = enabled, FALSE = disabled)</Abstract>
-			<DeclaredIn>Vibrator.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/lastPosUpdate</TokenIdentifier>
+			<Abstract>This property is the time point of the last position update of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
 			
-			<Declaration>@property (readonly, getter=isEnabled) BOOL enabled</Declaration>
+			<Declaration>@property (atomic, strong) NSNumber *lastPosUpdate</Declaration>
 			
 			
-			<Anchor>//api/name/enabled</Anchor>
+			<Anchor>//api/name/lastPosUpdate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setFriendshipStatus:</TokenIdentifier>
+			<Abstract>This property is the current friendship status of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *friendshipStatus</Declaration>
+			
+			
+			<Anchor>//api/name/friendshipStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/friendshipStatus</TokenIdentifier>
+			<Abstract>This property is the current friendship status of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *friendshipStatus</Declaration>
+			
+			
+			<Anchor>//api/name/friendshipStatus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setImage:</TokenIdentifier>
+			<Abstract>This property is the avatar image of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/image</TokenIdentifier>
+			<Abstract>This property is the avatar image of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setImageHash:</TokenIdentifier>
+			<Abstract>This property is the avatar image of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *imageHash</Declaration>
+			
+			
+			<Anchor>//api/name/imageHash</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/imageHash</TokenIdentifier>
+			<Abstract>This property is the avatar image of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *imageHash</Declaration>
+			
+			
+			<Anchor>//api/name/imageHash</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setLatitude:</TokenIdentifier>
+			<Abstract>This property is the last known position (latitude) of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/latitude</TokenIdentifier>
+			<Abstract>This property is the last known position (latitude) of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *latitude</Declaration>
+			
+			
+			<Anchor>//api/name/latitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setLongitude:</TokenIdentifier>
+			<Abstract>This property is the last known position (longitude) of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/longitude</TokenIdentifier>
+			<Abstract>This property is the last known position (longitude) of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSNumber *longitude</Declaration>
+			
+			
+			<Anchor>//api/name/longitude</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setUserId:</TokenIdentifier>
+			<Abstract>This property is the identifier of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/userId</TokenIdentifier>
+			<Abstract>This property is the identifier of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *userId</Declaration>
+			
+			
+			<Anchor>//api/name/userId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setIsActive:</TokenIdentifier>
+			<Abstract>This property is the current status of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL isActive</Declaration>
+			
+			
+			<Anchor>//api/name/isActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/isActive</TokenIdentifier>
+			<Abstract>This property is the current status of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property BOOL isActive</Declaration>
+			
+			
+			<Anchor>//api/name/isActive</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/setFacebookId:</TokenIdentifier>
+			<Abstract>This property is the identifier of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *facebookId</Declaration>
+			
+			
+			<Anchor>//api/name/facebookId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/JOFriend/facebookId</TokenIdentifier>
+			<Abstract>This property is the identifier of the friend.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>@property (atomic, strong) NSString *facebookId</Declaration>
+			
+			
+			<Anchor>//api/name/facebookId</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOFriend/initWithJSON:</TokenIdentifier>
+			<Abstract>This methods creates a friend object from a JSON string.</Abstract>
+			<DeclaredIn>JOFriend.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithJSON:(NSDictionary *)jsonData</Declaration>
+			
+			
+			<Anchor>//api/name/initWithJSON:</Anchor>
 		</Token>
 		
 	</File>

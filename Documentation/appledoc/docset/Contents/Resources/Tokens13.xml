@@ -4,7 +4,7 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/cl/JOClient</TokenIdentifier>
-			<Abstract></Abstract>
+			<Abstract>This class contains various methods for accessing the Joined server.</Abstract>
 			<DeclaredIn>JOClient.h</DeclaredIn>
 			
 			<NodeRef refid="13"/>
@@ -12,12 +12,39 @@
 		
 		
 		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/initServer:andApiKey:</TokenIdentifier>
+			<Abstract>This method creates a client for the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (id)initServer:(NSString *)joinedServerUrl andApiKey:(NSString *)joinedApiKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>joinedServerUrl</Name>
+					<Abstract>The URL of the Joined Server.</Abstract>
+				</Parameter><Parameter>
+					<Name>joinedApiKey</Name>
+					<Abstract>The API key for the Joined API for iOS.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/initServer:andApiKey:</Anchor>
+		</Token>
+		
+		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/JOClient/registerUser:andPassword:success:failed:</TokenIdentifier>
-			<Abstract>This class demonstrates AppleDoc.</Abstract>
+			<Abstract>This method creates a new user at the Joined server.</Abstract>
 			<DeclaredIn>JOClient.h</DeclaredIn>			
 			
 			<Declaration>- (void)registerUser:(NSString *)username andPassword:(NSString *)password success:(UserWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
-			
+			<Parameters>
+				<Parameter>
+					<Name>username</Name>
+					<Abstract>The name for the new user.</Abstract>
+				</Parameter><Parameter>
+					<Name>password</Name>
+					<Abstract>The password for the new user.</Abstract>
+				</Parameter>
+			</Parameters>
 			
 			<Anchor>//api/name/registerUser:andPassword:success:failed:</Anchor>
 		</Token>
@@ -31,7 +58,7 @@
 			<Parameters>
 				<Parameter>
 					<Name>user</Name>
-					<Abstract>The {@link JOUser} object that represents the logged in user.</Abstract>
+					<Abstract>The class JOUser object that represents the logged in user. </Abstract>
 				</Parameter>
 			</Parameters>
 			
@@ -53,24 +80,210 @@
 					<Abstract>The password of the user.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract>The {@link JOUser} object that represents the logged in user.</Abstract></ReturnValue>
+			
 			<Anchor>//api/name/loginUser:andPassword:success:failed:</Anchor>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/JOClient/getFriends:success:failed:</TokenIdentifier>
-			<Abstract>This method get the friends of an user from the Joined server.</Abstract>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/logoutUser:success:failed:</TokenIdentifier>
+			<Abstract>This method enables users to logout at the Joined server.</Abstract>
 			<DeclaredIn>JOClient.h</DeclaredIn>			
 			
-			<Declaration>- (void)getFriends:(JOUser *)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Declaration>- (void)logoutUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>user</Name>
-					<Abstract>The {@link JOUser} object that represents the logged in user.</Abstract>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/getFriends:success:failed:</Anchor>
+			<Anchor>//api/name/logoutUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/updatePosition:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This methods updates the position of the user at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)updatePosition:(CLLocationCoordinate2D)position forUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>position</Name>
+					<Abstract>The position of the user.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updatePosition:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/updateStatus:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This method updates the status of the user at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)updateStatus:(BOOL)status forUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>status</Name>
+					<Abstract>The status of the user (<code>true</code> for active and visible, <code>false</code> for inactive and invisible).</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateStatus:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/searchFriendsWithNickname:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This method searches other users at the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)searchFriendsWithNickname:(NSString *)nickname forUser:(JOUser *)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>nickname</Name>
+					<Abstract>The nickname other users.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/searchFriendsWithNickname:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/addFriend:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This method sends a friends invitation to another user. If the other user accepts the invitation, the user appears at the list of friends.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)addFriend:(JOFriend *)friend forUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>friend</Name>
+					<Abstract>The class JOFriend object that represents the other user.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/addFriend:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/acceptFriend:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This method accepts the friend invitation of another user.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)acceptFriend:(JOFriend *)friend forUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>friend</Name>
+					<Abstract>The class JOFriend object that represents the other user.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/acceptFriend:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/getFriendsForUser:success:failed:</TokenIdentifier>
+			<Abstract>This method get the friends of an user from the Joined server.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)getFriendsForUser:(JOUser *)user success:(FriendsWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getFriendsForUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/deleteFriend:forUser:success:failed:</TokenIdentifier>
+			<Abstract>This method deletes a friend from the list of friends.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteFriend:(JOFriend *)friend forUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>friend</Name>
+					<Abstract>The class JOUser object that represents the other user.
+  </Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteFriend:forUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/sendMessage:fromUser:toFriend:success:failed:</TokenIdentifier>
+			<Abstract>This method sends a text message to a friend.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)sendMessage:(NSString *)message fromUser:(JOUser *)user toFriend:(JOFriend *)friend success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>message</Name>
+					<Abstract>The text message.</Abstract>
+				</Parameter><Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter><Parameter>
+					<Name>friend</Name>
+					<Abstract>The class JOFriend object that represents the friend.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/sendMessage:fromUser:toFriend:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/getMessageForUser:success:failed:</TokenIdentifier>
+			<Abstract>This method returns a list of all available message from the inbox of the logged in user.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)getMessageForUser:(JOUser *)user success:(MessagesWebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getMessageForUser:success:failed:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/JOClient/deleteMessageForUser:success:failed:</TokenIdentifier>
+			<Abstract>This method deletes all messages in the inbox of the logged in user.</Abstract>
+			<DeclaredIn>JOClient.h</DeclaredIn>			
+			
+			<Declaration>- (void)deleteMessageForUser:(JOUser *)user success:(WebServiceSuccessBlock)successBlock failed:(WebServiceFailedBlock)failedBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>user</Name>
+					<Abstract>The class JOUser object that represents the logged in user.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/deleteMessageForUser:success:failed:</Anchor>
 		</Token>
 		
 	</File>

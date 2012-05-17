@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AzimuthStatusDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AzimuthStatusDelegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AzimuthStatusDelegate/azimuthChangedToCurrentAzimuth:andDeviation:</TokenIdentifier>
+			<Abstract>This function is called when the deviation to the target-location has changed.</Abstract>
+			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			
+			<Declaration>- (void)azimuthChangedToCurrentAzimuth:(CLLocationDirection)currentAzimuth andDeviation:(CLLocationDirection)deviation</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>currentAzimuth</Name>
+					<Abstract>Current azimuth toward north (0 = currently facing north, 90 = facing east, ...).</Abstract>
+				</Parameter><Parameter>
+					<Name>deviation</Name>
+					<Abstract>Deviation to the target-location in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/azimuthChangedToCurrentAzimuth:andDeviation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,52 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/BearingFeedbackDelegate.html">
+	<File path="Categories/UIImageView+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/BearingFeedbackDelegate</TokenIdentifier>
-			<Abstract></Abstract>
-			<DeclaredIn>BearingCore.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImageView(AFNetworking)</TokenIdentifier>
+			<Abstract>This category adds methods to the UIKit framework's UIImageView class. The methods in this category provide support for loading remote images asynchronously from a URL.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
 			
 			<NodeRef refid="18"/>
 		</Token>
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/start</TokenIdentifier>
-			<Abstract>This function starts the output.</Abstract>
-			<DeclaredIn>BearingCore.h</DeclaredIn>			
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURL:</TokenIdentifier>
+			<Abstract>Creates and enqueues an image request operation, which asynchronously downloads the image from the specified URL, and sets it the request is finished. If the image is cached locally, the image is set immediately, otherwise, the image is set once the request is finished.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
 			
-			<Declaration>- (void)start</Declaration>
-			
-			
-			<Anchor>//api/name/start</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/stop</TokenIdentifier>
-			<Abstract>This function stops the output.</Abstract>
-			<DeclaredIn>BearingCore.h</DeclaredIn>			
-			
-			<Declaration>- (void)stop</Declaration>
-			
-			
-			<Anchor>//api/name/stop</Anchor>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/BearingFeedbackDelegate/setDeviation:</TokenIdentifier>
-			<Abstract>This function is called when the deviation to the target-location has changed.</Abstract>
-			<DeclaredIn>BearingCore.h</DeclaredIn>			
-			
-			<Declaration>- (void)setDeviation:(CLLocationDirection)deviation</Declaration>
+			<Declaration>- (void)setImageWithURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>deviation</Name>
-					<Abstract>Deviation to the target-location in degrees. (0 = target is straight ahead, 90 = to the right, ...)</Abstract>
+					<Name>url</Name>
+					<Abstract>The URL used for the image request.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setDeviation:</Anchor>
+			<Anchor>//api/name/setImageWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURL:placeholderImage:</TokenIdentifier>
+			<Abstract>Creates and enqueues an image request operation, which asynchronously downloads the image from the specified URL. If the image is cached locally, the image is set immediately. Otherwise, the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholderImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract>The URL used for the image request.</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholderImage</Name>
+					<Abstract>The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.
+
+@discussion By default, url requests have a cache policy of NSURLCacheStorageAllowed and a timeout interval of 30 seconds, and are set to use HTTP pipelining, and not handle cookies. To configure url requests differently, use setImageWithURLRequest:placeholderImage:success:failure:</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setImageWithURL:placeholderImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UIImageView(AFNetworking)/setImageWithURLRequest:placeholderImage:success:failure:</TokenIdentifier>
+			<Abstract>Creates and enqueues an image request operation, which asynchronously downloads the image with the specified url request object. If the image is cached locally, the image is set immediately. Otherwise, the specified placeholder image will be set immediately, and then the remote image will be set once the request is finished.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>			
+			
+			<Declaration>- (void)setImageWithURLRequest:(NSURLRequest *)urlRequest placeholderImage:(UIImage *)placeholderImage success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>urlRequest</Name>
+					<Abstract>The url request used for the image request.</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholderImage</Name>
+					<Abstract>The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract>A block to be executed when the image request operation finishes successfully, with a status code in the 2xx range, and with an acceptable content type (e.g. image/png). This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the request and response parameters will be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract>A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.
+
+@discussion By default, url requests have a cache policy of NSURLCacheStorageAllowed and a timeout interval of 30 seconds, and are set to use HTTP pipelining, and not handle cookies. To configure url requests differently, use setImageWithURLRequest:placeholderImage:success:failure:</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setImageWithURLRequest:placeholderImage:success:failure:</Anchor>
 		</Token>
 		
 	</File>

@@ -1,4 +1,4 @@
 Documentation set was installed to Xcode!
 
-Path: /Users/bbaranski/Library/Developer/Shared/Documentation/DocSets/de.geomobile.Joined-API-iOS.docset
-Time: 2012-05-15 09:36:22 +0000
+Path: /Users/bastian/Library/Developer/Shared/Documentation/DocSets/de.geomobile.Joined-API-iOS.docset
+Time: 2012-05-17 21:42:36 +0000

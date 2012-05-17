@@ -21,6 +21,8 @@
 					<select id="jumpTo">
 	<option value="top">Jump To&#133;</option>
 	
+	<option value="overview">Overview</option>
+	
 	
 	
 	
@@ -36,13 +38,35 @@
 	
 	<option value="instance_methods">Instance Methods</option>
 	
+	<option value="//api/name/acceptFriend:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- acceptFriend:forUser:success:failed:</option>
+	
+	<option value="//api/name/addFriend:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- addFriend:forUser:success:failed:</option>
+	
+	<option value="//api/name/deleteFriend:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteFriend:forUser:success:failed:</option>
+	
+	<option value="//api/name/deleteMessageForUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteMessageForUser:success:failed:</option>
+	
 	<option value="//api/name/deleteUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- deleteUser:success:failed:</option>
 	
-	<option value="//api/name/getFriends:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- getFriends:success:failed:</option>
+	<option value="//api/name/getFriendsForUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- getFriendsForUser:success:failed:</option>
+	
+	<option value="//api/name/getMessageForUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- getMessageForUser:success:failed:</option>
+	
+	<option value="//api/name/initServer:andApiKey:">&nbsp;&nbsp;&nbsp;&nbsp;- initServer:andApiKey:</option>
 	
 	<option value="//api/name/loginUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- loginUser:andPassword:success:failed:</option>
 	
+	<option value="//api/name/logoutUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- logoutUser:success:failed:</option>
+	
 	<option value="//api/name/registerUser:andPassword:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- registerUser:andPassword:success:failed:</option>
+	
+	<option value="//api/name/searchFriendsWithNickname:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- searchFriendsWithNickname:forUser:success:failed:</option>
+	
+	<option value="//api/name/sendMessage:fromUser:toFriend:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- sendMessage:fromUser:toFriend:success:failed:</option>
+	
+	<option value="//api/name/updatePosition:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- updatePosition:forUser:success:failed:</option>
+	
+	<option value="//api/name/updateStatus:forUser:success:failed:">&nbsp;&nbsp;&nbsp;&nbsp;- updateStatus:forUser:success:failed:</option>
 	
 	
 	
@@ -53,6 +77,8 @@
 		<nav id="tocContainer" class="isShowingTOC">
 			<ul id="toc" role="tree">
 				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
 
 
 
@@ -70,13 +96,35 @@
 
 <li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/acceptFriend:forUser:success:failed:">acceptFriend:forUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/addFriend:forUser:success:failed:">addFriend:forUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteFriend:forUser:success:failed:">deleteFriend:forUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteMessageForUser:success:failed:">deleteMessageForUser:success:failed:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/deleteUser:success:failed:">deleteUser:success:failed:</a></span></li>
 	
-	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFriends:success:failed:">getFriends:success:failed:</a></span></li>
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getFriendsForUser:success:failed:">getFriendsForUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getMessageForUser:success:failed:">getMessageForUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initServer:andApiKey:">initServer:andApiKey:</a></span></li>
 	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/loginUser:andPassword:success:failed:">loginUser:andPassword:success:failed:</a></span></li>
 	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/logoutUser:success:failed:">logoutUser:success:failed:</a></span></li>
+	
 	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/registerUser:andPassword:success:failed:">registerUser:andPassword:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/searchFriendsWithNickname:forUser:success:failed:">searchFriendsWithNickname:forUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sendMessage:fromUser:toFriend:success:failed:">sendMessage:fromUser:toFriend:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updatePosition:forUser:success:failed:">updatePosition:forUser:success:failed:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateStatus:forUser:success:failed:">updateStatus:forUser:success:failed:</a></span></li>
 	
 </ul></li>
 
@@ -112,6 +160,14 @@
 					
 					
 					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>This class contains various methods for accessing the Joined server.</p>
+					</div>
+					
+					
+					
 					
 					
 					<div class="section section-tasks">
@@ -125,8 +181,15 @@
 						<ul class="task-list">
 							<li>
 	<span class="tooltip">
+		<code><a href="#//api/name/initServer:andApiKey:">&ndash;&nbsp;initServer:andApiKey:</a></code>
+		<span class="tooltip"><p>This method creates a client for the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
 		<code><a href="#//api/name/registerUser:andPassword:success:failed:">&ndash;&nbsp;registerUser:andPassword:success:failed:</a></code>
-		<span class="tooltip"><p>This class demonstrates AppleDoc.</p></span>
+		<span class="tooltip"><p>This method creates a new user at the Joined server.</p></span>
 	</span>
 	
 	
@@ -146,8 +209,78 @@
 	
 </li><li>
 	<span class="tooltip">
-		<code><a href="#//api/name/getFriends:success:failed:">&ndash;&nbsp;getFriends:success:failed:</a></code>
+		<code><a href="#//api/name/logoutUser:success:failed:">&ndash;&nbsp;logoutUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method enables users to logout at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updatePosition:forUser:success:failed:">&ndash;&nbsp;updatePosition:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This methods updates the position of the user at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateStatus:forUser:success:failed:">&ndash;&nbsp;updateStatus:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method updates the status of the user at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/searchFriendsWithNickname:forUser:success:failed:">&ndash;&nbsp;searchFriendsWithNickname:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method searches other users at the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/addFriend:forUser:success:failed:">&ndash;&nbsp;addFriend:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method sends a friends invitation to another user. If the other user accepts the invitation, the user appears at the list of friends.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/acceptFriend:forUser:success:failed:">&ndash;&nbsp;acceptFriend:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method accepts the friend invitation of another user.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getFriendsForUser:success:failed:">&ndash;&nbsp;getFriendsForUser:success:failed:</a></code>
 		<span class="tooltip"><p>This method get the friends of an user from the Joined server.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteFriend:forUser:success:failed:">&ndash;&nbsp;deleteFriend:forUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method deletes a friend from the list of friends.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sendMessage:fromUser:toFriend:success:failed:">&ndash;&nbsp;sendMessage:fromUser:toFriend:success:failed:</a></code>
+		<span class="tooltip"><p>This method sends a text message to a friend.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getMessageForUser:success:failed:">&ndash;&nbsp;getMessageForUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method returns a list of all available message from the inbox of the logged in user.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/deleteMessageForUser:success:failed:">&ndash;&nbsp;deleteMessageForUser:success:failed:</a></code>
+		<span class="tooltip"><p>This method deletes all messages in the inbox of the logged in user.</p></span>
 	</span>
 	
 	
@@ -169,6 +302,189 @@
 						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
 						
 						<div class="section-method">
+	<a name="//api/name/acceptFriend:forUser:success:failed:" title="acceptFriend:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">acceptFriend:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method accepts the friend invitation of another user.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)acceptFriend:(JOFriend *)<em>friend</em> forUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>friend</em></dt>
+			<dd><p>The class <a href="../Classes/JOFriend.html">JOFriend</a> object that represents the other user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/addFriend:forUser:success:failed:" title="addFriend:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">addFriend:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method sends a friends invitation to another user. If the other user accepts the invitation, the user appears at the list of friends.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)addFriend:(JOFriend *)<em>friend</em> forUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>friend</em></dt>
+			<dd><p>The class <a href="../Classes/JOFriend.html">JOFriend</a> object that represents the other user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteFriend:forUser:success:failed:" title="deleteFriend:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">deleteFriend:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deletes a friend from the list of friends.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)deleteFriend:(JOFriend *)<em>friend</em> forUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>friend</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the other user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/deleteMessageForUser:success:failed:" title="deleteMessageForUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">deleteMessageForUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method deletes all messages in the inbox of the logged in user.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)deleteMessageForUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
 	<a name="//api/name/deleteUser:success:failed:" title="deleteUser:success:failed:"></a>
 	<h3 class="subsubtitle method-title">deleteUser:success:failed:</h3>
 	
@@ -187,7 +503,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>user</em></dt>
-			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
 		</dl>
 		
 	</div>
@@ -195,11 +511,6 @@
 	
 	
 	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method deletes an existing user at the Joined server.</p>
-	</div>
 	
 	
 	
@@ -216,8 +527,8 @@
 </div>
 						
 						<div class="section-method">
-	<a name="//api/name/getFriends:success:failed:" title="getFriends:success:failed:"></a>
-	<h3 class="subsubtitle method-title">getFriends:success:failed:</h3>
+	<a name="//api/name/getFriendsForUser:success:failed:" title="getFriendsForUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">getFriendsForUser:success:failed:</h3>
 	
 	
 	
@@ -226,7 +537,7 @@
 	</div>		
 	
 	
-	<div class="method-subsection method-declaration"><code>- (void)getFriends:(JOUser *)<em>user</em> success:(FriendsWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	<div class="method-subsection method-declaration"><code>- (void)getFriendsForUser:(JOUser *)<em>user</em> success:(FriendsWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
 	
 	
 	<div class="method-subsection arguments-section parameters">
@@ -234,7 +545,7 @@
 		
 		<dl class="argument-def parameter-def">
 			<dt><em>user</em></dt>
-			<dd><p>The {@link JOUser} object that represents the logged in user.</p></dd>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
 		</dl>
 		
 	</div>
@@ -243,10 +554,94 @@
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method get the friends of an user from the Joined server.</p>
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getMessageForUser:success:failed:" title="getMessageForUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">getMessageForUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns a list of all available message from the inbox of the logged in user.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)getMessageForUser:(JOUser *)<em>user</em> success:(MessagesWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initServer:andApiKey:" title="initServer:andApiKey:"></a>
+	<h3 class="subsubtitle method-title">initServer:andApiKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method creates a client for the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (id)initServer:(NSString *)<em>joinedServerUrl</em> andApiKey:(NSString *)<em>joinedApiKey</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>joinedServerUrl</em></dt>
+			<dd><p>The URL of the Joined Server.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>joinedApiKey</em></dt>
+			<dd><p>The API key for the Joined API for iOS.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
 	
 	
 	
@@ -293,17 +688,49 @@
 	
 	
 	
-	<div class="method-subsection return">
-		<h4 class="method-subtitle parameter-title">Return Value</h4>
-		<p>The {@link JOUser} object that represents the logged in user.</p>
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/logoutUser:success:failed:" title="logoutUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">logoutUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method enables users to logout at the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)logoutUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
 	</div>
 	
 	
 	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This method enables users to login at the Joined server.</p>
-	</div>
+	
 	
 	
 	
@@ -326,29 +753,224 @@
 	
 	
 	<div class="method-subsection brief-description">
-		<p>This class demonstrates AppleDoc.</p>
+		<p>This method creates a new user at the Joined server.</p>
 	</div>		
 	
 	
 	<div class="method-subsection method-declaration"><code>- (void)registerUser:(NSString *)<em>username</em> andPassword:(NSString *)<em>password</em> success:(UserWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
 	
 	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>This class demonstrates AppleDoc.</p>
-
-<p>A second paragraph comes after an empty line.</p>
-
-<pre><code>int i=0;
-i++;
-</code></pre>
-
-<p>And some sample code can also be in a block, but indented with a TAB.</p>
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>username</em></dt>
+			<dd><p>The name for the new user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>password</em></dt>
+			<dd><p>The password for the new user.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/searchFriendsWithNickname:forUser:success:failed:" title="searchFriendsWithNickname:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">searchFriendsWithNickname:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method searches other users at the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)searchFriendsWithNickname:(NSString *)<em>nickname</em> forUser:(JOUser *)<em>user</em> success:(FriendsWebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>nickname</em></dt>
+			<dd><p>The nickname other users.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sendMessage:fromUser:toFriend:success:failed:" title="sendMessage:fromUser:toFriend:success:failed:"></a>
+	<h3 class="subsubtitle method-title">sendMessage:fromUser:toFriend:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method sends a text message to a friend.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)sendMessage:(NSString *)<em>message</em> fromUser:(JOUser *)<em>user</em> toFriend:(JOFriend *)<em>friend</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>message</em></dt>
+			<dd><p>The text message.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>friend</em></dt>
+			<dd><p>The class <a href="../Classes/JOFriend.html">JOFriend</a> object that represents the friend.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updatePosition:forUser:success:failed:" title="updatePosition:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">updatePosition:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This methods updates the position of the user at the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updatePosition:(CLLocationCoordinate2D)<em>position</em> forUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><p>The position of the user.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">JOClient.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/updateStatus:forUser:success:failed:" title="updateStatus:forUser:success:failed:"></a>
+	<h3 class="subsubtitle method-title">updateStatus:forUser:success:failed:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method updates the status of the user at the Joined server.</p>
+	</div>		
+	
+	
+	<div class="method-subsection method-declaration"><code>- (void)updateStatus:(BOOL)<em>status</em> forUser:(JOUser *)<em>user</em> success:(WebServiceSuccessBlock)<em>successBlock</em> failed:(WebServiceFailedBlock)<em>failedBlock</em></code></div>
+	
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>status</em></dt>
+			<dd><p>The status of the user (<code>true</code> for active and visible, <code>false</code> for inactive and invisible).</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>user</em></dt>
+			<dd><p>The class <a href="../Classes/JOUser.html">JOUser</a> object that represents the logged in user.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
 	
 	
 	
@@ -377,7 +999,7 @@ i++;
 				<div id="footer">
 					<hr />
 					<div class="footer-copyright">
-						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-15)</span><br />
+						<p><span class="copyright">&copy; 2012 GeoMobile GmbH. All rights reserved. (Last updated: 2012-05-17)</span><br />
 						
 						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 789)</a>.</span></p>
 						
