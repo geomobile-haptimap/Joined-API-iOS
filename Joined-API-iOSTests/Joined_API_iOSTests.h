@@ -8,19 +8,30 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-#import "JOUser.h"
+#import "JOClient.h"
 
 @interface Joined_API_iOSTests : SenTestCase
 
-- (void) joinedWorkflowCleanupUser1;
+@property (atomic, strong) JOClient* client;
 
-- (void) joinedWorkflowRegistrationUser1;
-- (void) joinedWorkflowRegistrationUser2;
+- (void) joinedWorkflowCleanup;
 
-- (void) joinedWorkflowLoginUser1;
-- (void) joinedWorkflowLoginUser2;
+- (void) joinedWorkflowRegistration;
 
-- (void) joinedWorkflowLogoutUser1:(JOUser*) user;
-- (void) joinedWorkflowLogoutUser2:(JOUser*) user;
+- (void) joinedWorkflowLogin;
+
+- (void) joinedWorkflowLogout;
+
+- (void) joinedWorkflowUpdatePosition;
+
+- (void) joinedWorkflowUpdateStatus;
+
+- (void) joinedWorkflowInviteFriend;
+
+- (void) joinedWorkflowAcceptFriend;
+
+- (void) joinedWorkflowSendMessage;
+
+- (void) joinedWorkflowGetMessages;
 
 @end

@@ -36,17 +36,17 @@
 /**
  * This variable indicates that there is no friend relationship to another user ({@see Friend}).
  */
-#define FRIEND_STATUS_NO = 0
+#define FRIEND_STATUS_NO 0
 
 /**
  * This variable indicates that there is an active friend relationship to another user ({@see Friend}).
  */
-#define FRIEND_STATUS_YES = 1
+#define FRIEND_STATUS_YES 1
 
 /**
  * This variable indicates that there is a pending friend invitation for another user ({@see Friend}).
  */
-#define FRIEND_STATUS_PENDING = 2
+#define FRIEND_STATUS_PENDING 2
 
 /* MESSAGES */
 
@@ -58,12 +58,12 @@
 /**
  * This variable is not documented and for internal use only.
  */
-#define MESSAGE_FROM = 0
+#define MESSAGE_FROM 0
 
 /**
  * This variable is not documented and for internal use only.
  */
-#define MESSAGE_TO = 1
+#define MESSAGE_TO 1
 
 /* RESOURCES */
 

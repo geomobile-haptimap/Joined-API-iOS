@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0326FFFE1562F31C00FC0D0A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26215618B1900F5AEDB /* CoreLocation.framework */; };
+		0342A6F11562EEB8009C21D3 /* JOMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0342A6F01562EEB8009C21D3 /* JOMessage.m */; };
 		0349F26315618B1900F5AEDB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26215618B1900F5AEDB /* CoreLocation.framework */; };
 		0349F26515618B2800F5AEDB /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26415618B2800F5AEDB /* CoreAudio.framework */; };
 		0349F26715618B4C00F5AEDB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0349F26615618B4C00F5AEDB /* AudioToolbox.framework */; };
+		03D6228A1564330100C4C650 /* JONSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D622891564330100C4C650 /* JONSString+URLEncoding.m */; };
 		03E19D8515619AFE008DEF50 /* bearing.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 03E19D7915619AFE008DEF50 /* bearing.bundle */; };
 		03E19D8615619AFE008DEF50 /* BearingCore.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D7B15619AFE008DEF50 /* BearingCore.m */; };
 		03E19D8715619AFE008DEF50 /* CompassView.m in Sources */ = {isa = PBXBuildFile; fileRef = 03E19D7D15619AFE008DEF50 /* CompassView.m */; };
@@ -62,9 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0342A6EF1562EEB8009C21D3 /* JOMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JOMessage.h; sourceTree = "<group>"; };
+		0342A6F01562EEB8009C21D3 /* JOMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JOMessage.m; sourceTree = "<group>"; };
 		0349F26215618B1900F5AEDB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0349F26415618B2800F5AEDB /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		0349F26615618B4C00F5AEDB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03D622881564330100C4C650 /* JONSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; path = "JONSString+URLEncoding.h"; sourceTree = "<group>"; };
+		03D622891564330100C4C650 /* JONSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JONSString+URLEncoding.m"; sourceTree = "<group>"; };
 		03E19D7915619AFE008DEF50 /* bearing.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = bearing.bundle; path = JoinedBearingAPI/bearing.bundle; sourceTree = "<group>"; };
 		03E19D7A15619AFE008DEF50 /* BearingCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BearingCore.h; path = JoinedBearingAPI/BearingCore.h; sourceTree = "<group>"; };
 		03E19D7B15619AFE008DEF50 /* BearingCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BearingCore.m; path = JoinedBearingAPI/BearingCore.m; sourceTree = "<group>"; };
@@ -158,6 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0326FFFE1562F31C00FC0D0A /* CoreLocation.framework in Frameworks */,
 				03E84227155810CD00E3C050 /* SenTestingKit.framework in Frameworks */,
 				03E84228155810CD00E3C050 /* UIKit.framework in Frameworks */,
 				03E84229155810CD00E3C050 /* Foundation.framework in Frameworks */,
@@ -331,6 +339,8 @@
 		6FB9A44C15613BA0004A7645 /* General */ = {
 			isa = PBXGroup;
 			children = (
+				03D622881564330100C4C650 /* JONSString+URLEncoding.h */,
+				03D622891564330100C4C650 /* JONSString+URLEncoding.m */,
 				6FB9A44D15613BA0004A7645 /* JOJoinedHTTPClient.h */,
 				6FB9A44E15613BA0004A7645 /* JOJoinedHTTPClient.m */,
 				6FB9A44F15613BA0004A7645 /* JOJSONRequestOperation.h */,
@@ -344,6 +354,8 @@
 		6FB9A45515613BA0004A7645 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0342A6EF1562EEB8009C21D3 /* JOMessage.h */,
+				0342A6F01562EEB8009C21D3 /* JOMessage.m */,
 				6FB9A45615613BA0004A7645 /* JOFriend.h */,
 				6FB9A45715613BA0004A7645 /* JOFriend.m */,
 				6FB9A45815613BA0004A7645 /* JOUser.h */,
@@ -488,6 +500,8 @@
 				03E19D8915619AFE008DEF50 /* Geiger.m in Sources */,
 				03E19D8A15619AFE008DEF50 /* Vibrator.m in Sources */,
 				6F38AA5E15622BF6000958F0 /* UIImageView+AFNetworking.m in Sources */,
+				0342A6F11562EEB8009C21D3 /* JOMessage.m in Sources */,
+				03D6228A1564330100C4C650 /* JONSString+URLEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

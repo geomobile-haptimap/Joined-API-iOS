@@ -22,8 +22,8 @@
     self = [super init];
     
     JOClient* client = [[JOClient alloc] initServer:JOINED_SERVER andApiKey:JOINED_API_KEY];
-       
-    [client getFriends:user success:^(NSArray *friends) 
+
+    [client getFriendsForUser:user success:^(NSArray *friends) 
     {
         self.friendList = friends;
         [self.tableView reloadData];
